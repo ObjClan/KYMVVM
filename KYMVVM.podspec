@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   
   # User
   s.author             = { "OBjClan" => "405008067@qq.com" } # 作者信息
-  s.social_media_url   = "https://github.com/ObjClan/KYMVVM.git" # 个人主页
+  s.social_media_url   = "https://user.qzone.qq.com/405008067/main" # 个人主页
 
 end

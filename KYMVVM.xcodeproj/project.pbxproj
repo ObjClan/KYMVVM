@@ -14,6 +14,12 @@
 		3070912F2250C496009D3520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3070912E2250C496009D3520 /* Assets.xcassets */; };
 		307091322250C496009D3520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307091302250C496009D3520 /* LaunchScreen.storyboard */; };
 		307091402250C622009D3520 /* KYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070913F2250C622009D3520 /* KYBaseViewController.m */; };
+		30709143225239DB009D3520 /* KYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30709142225239DB009D3520 /* KYNavigationController.m */; };
+		3070914622523A4D009D3520 /* KYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070914522523A4D009D3520 /* KYTabBarController.m */; };
+		3070914922523AA3009D3520 /* KYBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070914822523AA3009D3520 /* KYBaseView.m */; };
+		3070914C22523B12009D3520 /* KYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070914B22523B12009D3520 /* KYBaseModel.m */; };
+		3070914F22523B29009D3520 /* KYBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070914E22523B29009D3520 /* KYBaseViewModel.m */; };
+		D48989349316A4C0D4B7B656 /* Pods_KYMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B799B61D5AF425A1ADE229 /* Pods_KYMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,19 @@
 		307091332250C496009D3520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3070913E2250C622009D3520 /* KYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBaseViewController.h; sourceTree = "<group>"; };
 		3070913F2250C622009D3520 /* KYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBaseViewController.m; sourceTree = "<group>"; };
+		30709141225239DB009D3520 /* KYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYNavigationController.h; sourceTree = "<group>"; };
+		30709142225239DB009D3520 /* KYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYNavigationController.m; sourceTree = "<group>"; };
+		3070914422523A4D009D3520 /* KYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTabBarController.h; sourceTree = "<group>"; };
+		3070914522523A4D009D3520 /* KYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTabBarController.m; sourceTree = "<group>"; };
+		3070914722523AA3009D3520 /* KYBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBaseView.h; sourceTree = "<group>"; };
+		3070914822523AA3009D3520 /* KYBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBaseView.m; sourceTree = "<group>"; };
+		3070914A22523B12009D3520 /* KYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBaseModel.h; sourceTree = "<group>"; };
+		3070914B22523B12009D3520 /* KYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBaseModel.m; sourceTree = "<group>"; };
+		3070914D22523B29009D3520 /* KYBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBaseViewModel.h; sourceTree = "<group>"; };
+		3070914E22523B29009D3520 /* KYBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBaseViewModel.m; sourceTree = "<group>"; };
+		4E06B6C54B59B9FA0F51D11F /* Pods-KYMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMVVM.debug.xcconfig"; path = "Target Support Files/Pods-KYMVVM/Pods-KYMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		91B799B61D5AF425A1ADE229 /* Pods_KYMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		979FDF9121395D5EE9EB3AC3 /* Pods-KYMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMVVM.release.xcconfig"; path = "Target Support Files/Pods-KYMVVM/Pods-KYMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48989349316A4C0D4B7B656 /* Pods_KYMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0300206441DB230F528A0ECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91B799B61D5AF425A1ADE229 /* Pods_KYMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		307091162250C496009D3520 = {
 			isa = PBXGroup;
 			children = (
 				307091212250C496009D3520 /* KYMVVM */,
 				307091202250C496009D3520 /* Products */,
+				E3FAADC8118200A2E9083376 /* Pods */,
+				0300206441DB230F528A0ECC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +118,27 @@
 			children = (
 				3070913E2250C622009D3520 /* KYBaseViewController.h */,
 				3070913F2250C622009D3520 /* KYBaseViewController.m */,
+				30709141225239DB009D3520 /* KYNavigationController.h */,
+				30709142225239DB009D3520 /* KYNavigationController.m */,
+				3070914422523A4D009D3520 /* KYTabBarController.h */,
+				3070914522523A4D009D3520 /* KYTabBarController.m */,
+				3070914722523AA3009D3520 /* KYBaseView.h */,
+				3070914822523AA3009D3520 /* KYBaseView.m */,
+				3070914A22523B12009D3520 /* KYBaseModel.h */,
+				3070914B22523B12009D3520 /* KYBaseModel.m */,
+				3070914D22523B29009D3520 /* KYBaseViewModel.h */,
+				3070914E22523B29009D3520 /* KYBaseViewModel.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		E3FAADC8118200A2E9083376 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E06B6C54B59B9FA0F51D11F /* Pods-KYMVVM.debug.xcconfig */,
+				979FDF9121395D5EE9EB3AC3 /* Pods-KYMVVM.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 307091362250C496009D3520 /* Build configuration list for PBXNativeTarget "KYMVVM" */;
 			buildPhases = (
+				BC39B32889A89ECBFA6CFAA9 /* [CP] Check Pods Manifest.lock */,
 				3070911B2250C496009D3520 /* Sources */,
 				3070911C2250C496009D3520 /* Frameworks */,
 				3070911D2250C496009D3520 /* Resources */,
+				F0EE8AC96109A0BB827EEC3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,13 +209,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BC39B32889A89ECBFA6CFAA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KYMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0EE8AC96109A0BB827EEC3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KYMVVM/Pods-KYMVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KYMVVM/Pods-KYMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3070911B2250C496009D3520 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3070914C22523B12009D3520 /* KYBaseModel.m in Sources */,
+				3070914F22523B29009D3520 /* KYBaseViewModel.m in Sources */,
 				3070912A2250C496009D3520 /* ViewController.m in Sources */,
+				3070914922523AA3009D3520 /* KYBaseView.m in Sources */,
+				30709143225239DB009D3520 /* KYNavigationController.m in Sources */,
 				307091272250C496009D3520 /* AppDelegate.m in Sources */,
+				3070914622523A4D009D3520 /* KYTabBarController.m in Sources */,
 				307091242250C496009D3520 /* main.m in Sources */,
 				307091402250C622009D3520 /* KYBaseViewController.m in Sources */,
 			);
@@ -286,6 +381,7 @@
 		};
 		307091372250C496009D3520 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E06B6C54B59B9FA0F51D11F /* Pods-KYMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KYMVVM/Info.plist;
@@ -298,6 +394,7 @@
 		};
 		307091382250C496009D3520 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979FDF9121395D5EE9EB3AC3 /* Pods-KYMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KYMVVM/Info.plist;

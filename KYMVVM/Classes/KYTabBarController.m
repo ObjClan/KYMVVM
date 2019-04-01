@@ -1,37 +1,33 @@
 //
-//  KYBaseViewController.m
+//  KYTabBarController.m
 //  KYMVVM
 //
-//  Created by object_lan on 2019/3/31.
+//  Created by object_lan on 2019/4/1.
 //  Copyright © 2019年 object_lan. All rights reserved.
 //
 
-#import "KYBaseViewController.h"
+#import "KYTabBarController.h"
 
-@interface KYBaseViewController ()
+@interface KYTabBarController ()
 
 @end
 
-@implementation KYBaseViewController
+@implementation KYTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-- (BOOL)prefersStatusBarHidden
-{
-    return NO;
-}
 - (BOOL)shouldAutorotate
 {
-    return YES;
+    return [self.selectedViewController shouldAutorotate];
 }
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskPortrait;
+    return [self.selectedViewController supportedInterfaceOrientations];
 }
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
-    return UIInterfaceOrientationPortrait;
+    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

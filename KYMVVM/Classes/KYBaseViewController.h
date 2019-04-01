@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "KYBaseViewModel.h"
 @interface KYBaseViewController : UIViewController
-
+@property (strong, nonatomic) KYBaseViewModel *viewModel;
 @end
