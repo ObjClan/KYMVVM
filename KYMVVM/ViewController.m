@@ -26,7 +26,7 @@
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self presentViewController:[TableViewController new] animated:YES completion:nil];
+    [self presentViewController:[[TableViewController alloc] init] animated:YES completion:nil];
 }
 
 @end

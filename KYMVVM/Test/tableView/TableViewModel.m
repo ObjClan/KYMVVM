@@ -73,9 +73,16 @@ static NSString *const gameFirstItemId = @"gameFirstItemId";
         TableCellItemModel1 *item = (TableCellItemModel1 *)[self getItemModelWithSectionId:gameSectionId itemId:gameFirstItemId];
         //只更新title
         item.title = @"sdfdsfdsf";
+        self.shouldReload = YES;
         if (completion) {
             completion();
         }
+    });
+}
+- (void)fetchTitle
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.title = @"哈哈啊啊";
     });
 }
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <Masonry/Masonry.h>
 @interface KYBaseViewController : UIViewController
-
+- (void)addBind;
+- (void)addSubViews;
+- (void)setSubViewConstraints;
 @end

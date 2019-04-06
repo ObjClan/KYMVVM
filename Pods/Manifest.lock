@@ -1,20 +1,24 @@
 PODS:
   - JSONModel (1.8.0)
   - Masonry (1.1.0)
+  - ReactiveObjC (3.1.0)
 
 DEPENDENCIES:
   - JSONModel
   - Masonry
+  - ReactiveObjC
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - JSONModel
     - Masonry
+    - ReactiveObjC
 
 SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
 
-PODFILE CHECKSUM: e7826cb2f1c6945b687844b65abaf1a0b8ab653e
+PODFILE CHECKSUM: 3f331cf2c16cde3327cae6dbda94fa22f50c7981
 
 COCOAPODS: 1.6.0.beta.2

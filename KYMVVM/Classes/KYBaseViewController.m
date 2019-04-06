@@ -14,6 +14,18 @@
 
 @implementation KYBaseViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self addBind];
+    }
+    return self;
+}
+- (void)dealloc
+{
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addSubViews];
@@ -49,5 +61,8 @@
 {
 
 }
-
+- (void)addBind
+{
+    
+}
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "KYTableViewController.h"
-#import <Masonry/Masonry.h>
 #import "KYBaseTableCell.h"
 @interface KYTableViewController ()
 

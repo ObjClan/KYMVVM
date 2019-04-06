@@ -11,16 +11,39 @@
 #import "TableViewCell.h"
 #import "TableView1Cell.h"
 @interface TableViewController ()
-
+@property (nonatomic, weak) IBOutlet UILabel *titleLB;
 @end
 
 @implementation TableViewController
 @synthesize viewModel = _viewModel;
 
+- (void)addBind
+{
+    TableViewModel *viewModel = (TableViewModel *)self.viewModel;
+    @weakify(self)
+    RAC(self,titleLB.text) = RACObserve(viewModel, title);
+    [RACObserve(viewModel, shouldReload) subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        if ([x boolValue]) [self.tableView reloadData];
+    }];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.viewModel fetchDataWithCompletion:^{
-        [self.tableView reloadData];
+    self.view.backgroundColor = [UIColor whiteColor];
+    TableViewModel *viewModel = (TableViewModel *)self.viewModel;
+    [viewModel fetchTitle];
+    [viewModel fetchDataWithCompletion:nil];
+}
+- (void)addSubViews
+{
+    [super addSubViews];
+}
+- (void)setSubViewConstraints
+{
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.titleLB.mas_bottom);
+        make.left.and.right.equalTo(self.view);
+        make.bottom.equalTo(self.mas_bottomLayoutGuide);
     }];
 }
 - (KYTableViewModel *)viewModel

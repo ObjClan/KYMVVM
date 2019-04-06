@@ -8,4 +8,5 @@ target 'KYMVVM' do
   # Pods for KYMVVM
   pod 'JSONModel'
   pod 'Masonry'
+  pod 'ReactiveObjC'
 end

@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.frameworks   = "UIKit", "Foundation" #支持的框架
   s.dependency   'JSONModel', '~> 1.7.0' # 依赖库
   s.dependency   'Masonry', '~> 1.1.0'
+  s.dependency   'ReactiveObjC', '~> 3.1.0'
   # User
   s.author             = { "OBjClan" => "405008067@qq.com" } # 作者信息
   #s.social_media_url   = "www.test.com" # 个人主页

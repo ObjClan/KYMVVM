@@ -23,6 +23,7 @@
 		EA7D3454225858E3006917CE /* TableView1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7D3452225858E3006917CE /* TableView1Cell.m */; };
 		EA7D3455225858E3006917CE /* TableView1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA7D3453225858E3006917CE /* TableView1Cell.xib */; };
 		EA7D347A22587BB7006917CE /* TableCellItemModel1.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7D347922587BB7006917CE /* TableCellItemModel1.m */; };
+		EA7D347C22589ED2006917CE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA7D347B22589ED2006917CE /* TableViewController.xib */; };
 		EAA1933922571E9600E001B3 /* KYBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1933822571E9600E001B3 /* KYBaseTableCell.m */; };
 		EAA1933C22571EB700E001B3 /* KYBaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1933B22571EB700E001B3 /* KYBaseCollectionCell.m */; };
 		EAA1933F22571EDF00E001B3 /* KYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1933E22571EDF00E001B3 /* KYTableViewController.m */; };
@@ -68,6 +69,7 @@
 		EA7D3453225858E3006917CE /* TableView1Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableView1Cell.xib; sourceTree = "<group>"; };
 		EA7D347822587BB7006917CE /* TableCellItemModel1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellItemModel1.h; sourceTree = "<group>"; };
 		EA7D347922587BB7006917CE /* TableCellItemModel1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellItemModel1.m; sourceTree = "<group>"; };
+		EA7D347B22589ED2006917CE /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		EAA1933722571E9600E001B3 /* KYBaseTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYBaseTableCell.h; sourceTree = "<group>"; };
 		EAA1933822571E9600E001B3 /* KYBaseTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYBaseTableCell.m; sourceTree = "<group>"; };
 		EAA1933A22571EB700E001B3 /* KYBaseCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYBaseCollectionCell.h; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				EAA1934E2257453600E001B3 /* TableViewController.h */,
 				EAA1934F2257453600E001B3 /* TableViewController.m */,
+				EA7D347B22589ED2006917CE /* TableViewController.xib */,
 				EAA193512257455D00E001B3 /* TableCellItemModel.h */,
 				EAA193522257455D00E001B3 /* TableCellItemModel.m */,
 				EA7D347822587BB7006917CE /* TableCellItemModel1.h */,
@@ -291,6 +294,7 @@
 				307091322250C496009D3520 /* LaunchScreen.storyboard in Resources */,
 				EA7D3455225858E3006917CE /* TableView1Cell.xib in Resources */,
 				EAA1935E225746A900E001B3 /* TableViewCell.xib in Resources */,
+				EA7D347C22589ED2006917CE /* TableViewController.xib in Resources */,
 				3070912F2250C496009D3520 /* Assets.xcassets in Resources */,
 				3070912D2250C496009D3520 /* Main.storyboard in Resources */,
 			);
@@ -326,11 +330,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-KYMVVM/Pods-KYMVVM-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
