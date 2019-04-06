@@ -57,7 +57,7 @@
 {
     KYBaseCellItemModel *model = self.viewModel.sections[indexPath.section].itemsModels[indexPath.row];
     if (!model.className) {
-        NSString *errInfo = @"cell的类名不能为空，请在viewModel中配置";
+        NSString *errInfo = [NSString stringWithFormat:@"%@ cell的类名不能为空，请在viewModel中配置",NSStringFromClass([self class])] ;
         @throw [NSException exceptionWithName:@"温馨提示" reason:errInfo userInfo:nil];
     }
     Class cellClass = NSClassFromString(model.className);
