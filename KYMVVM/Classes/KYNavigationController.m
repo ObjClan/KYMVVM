@@ -16,6 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /*
+    self.navigationBar.translucent = NO; //是否透明
+    self.navigationBar.titleTextAttributes = nil; //title样式
+    self.navigationBar.barTintColor = nil;//背景色
+    [self.navigationBar setShadowImage:[UIImage new]]; //
+    [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+     */
+}
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return [self.topViewController preferredStatusBarStyle];
+}
+- (BOOL)prefersStatusBarHidden
+{
+    return [self.topViewController prefersStatusBarHidden];
+}
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation{
+    return self.topViewController.preferredStatusBarUpdateAnimation;
 }
 - (BOOL)shouldAutorotate
 {

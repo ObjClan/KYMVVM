@@ -9,5 +9,7 @@
 #import "KYBaseModel.h"
 
 @implementation KYBaseModel
-
++ (BOOL)propertyIsOptional:(NSString *)propertyName {
+    return YES;
+}
 @end

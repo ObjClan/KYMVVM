@@ -17,6 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return [self.selectedViewController preferredStatusBarStyle];
+}
+- (BOOL)prefersStatusBarHidden
+{
+    return [self.selectedViewController prefersStatusBarHidden];
+}
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation{
+    return self.selectedViewController.preferredStatusBarUpdateAnimation;
+}
 - (BOOL)shouldAutorotate
 {
     return [self.selectedViewController shouldAutorotate];

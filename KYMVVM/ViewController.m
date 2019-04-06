@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "TableViewController.h"
 @interface ViewController ()
 
 @end
@@ -24,6 +24,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self presentViewController:[TableViewController new] animated:YES completion:nil];
+}
 
 @end

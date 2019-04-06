@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface KYBaseViewModel : NSObject
-
+- (void)initData;
+- (void)fetchDataWithCompletion:(void(^)(void))completion;
 @end

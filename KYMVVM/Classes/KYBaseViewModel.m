@@ -9,5 +9,12 @@
 #import "KYBaseViewModel.h"
 
 @implementation KYBaseViewModel
-
+- (void)initData
+{
+    
+}
+- (void)fetchDataWithCompletion:(void(^)(void))completion
+{
+    
+}
 @end

@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addSubViews];
+    [self setSubViewConstraints];
+}
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
 }
 - (BOOL)prefersStatusBarHidden
 {
@@ -36,6 +41,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+- (void)addSubViews
+{
+   
+}
+- (void)setSubViewConstraints
+{
 
+}
 
 @end
