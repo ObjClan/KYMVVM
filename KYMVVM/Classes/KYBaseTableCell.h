@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KYBaseTableCell : UITableViewCell
+
+/**
+ 创建cell，如果从xib创建，xib的identifler设置为cell的类名
+ */
 + (KYBaseTableCell *)createWithTableView:(UITableView *)tableView;
 @end
 

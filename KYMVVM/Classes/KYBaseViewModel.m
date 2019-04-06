@@ -9,6 +9,15 @@
 #import "KYBaseViewModel.h"
 
 @implementation KYBaseViewModel
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self initData];
+    }
+    return self;
+}
 - (void)initData
 {
     

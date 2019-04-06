@@ -22,6 +22,7 @@
 		D48989349316A4C0D4B7B656 /* Pods_KYMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B799B61D5AF425A1ADE229 /* Pods_KYMVVM.framework */; };
 		EA7D3454225858E3006917CE /* TableView1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7D3452225858E3006917CE /* TableView1Cell.m */; };
 		EA7D3455225858E3006917CE /* TableView1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA7D3453225858E3006917CE /* TableView1Cell.xib */; };
+		EA7D347A22587BB7006917CE /* TableCellItemModel1.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7D347922587BB7006917CE /* TableCellItemModel1.m */; };
 		EAA1933922571E9600E001B3 /* KYBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1933822571E9600E001B3 /* KYBaseTableCell.m */; };
 		EAA1933C22571EB700E001B3 /* KYBaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1933B22571EB700E001B3 /* KYBaseCollectionCell.m */; };
 		EAA1933F22571EDF00E001B3 /* KYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1933E22571EDF00E001B3 /* KYTableViewController.m */; };
@@ -66,6 +67,8 @@
 		EA7D3451225858E3006917CE /* TableView1Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableView1Cell.h; sourceTree = "<group>"; };
 		EA7D3452225858E3006917CE /* TableView1Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableView1Cell.m; sourceTree = "<group>"; };
 		EA7D3453225858E3006917CE /* TableView1Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableView1Cell.xib; sourceTree = "<group>"; };
+		EA7D347822587BB7006917CE /* TableCellItemModel1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellItemModel1.h; sourceTree = "<group>"; };
+		EA7D347922587BB7006917CE /* TableCellItemModel1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellItemModel1.m; sourceTree = "<group>"; };
 		EAA1933722571E9600E001B3 /* KYBaseTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYBaseTableCell.h; sourceTree = "<group>"; };
 		EAA1933822571E9600E001B3 /* KYBaseTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYBaseTableCell.m; sourceTree = "<group>"; };
 		EAA1933A22571EB700E001B3 /* KYBaseCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYBaseCollectionCell.h; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 				EAA1934F2257453600E001B3 /* TableViewController.m */,
 				EAA193512257455D00E001B3 /* TableCellItemModel.h */,
 				EAA193522257455D00E001B3 /* TableCellItemModel.m */,
+				EA7D347822587BB7006917CE /* TableCellItemModel1.h */,
+				EA7D347922587BB7006917CE /* TableCellItemModel1.m */,
 				EAA193542257457600E001B3 /* TableViewModel.h */,
 				EAA193552257457600E001B3 /* TableViewModel.m */,
 				EAA193572257459900E001B3 /* TableCellSectionModel.h */,
@@ -364,6 +369,7 @@
 				3070914622523A4D009D3520 /* KYTabBarController.m in Sources */,
 				307091242250C496009D3520 /* main.m in Sources */,
 				EAA193492257436E00E001B3 /* KYBaseCellItemModel.m in Sources */,
+				EA7D347A22587BB7006917CE /* TableCellItemModel1.m in Sources */,
 				EAA1934222571EF700E001B3 /* KYCollectionViewController.m in Sources */,
 				307091402250C622009D3520 /* KYBaseViewController.m in Sources */,
 			);

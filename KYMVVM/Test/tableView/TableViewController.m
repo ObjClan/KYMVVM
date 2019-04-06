@@ -35,12 +35,12 @@
     if ([model.className isEqualToString:NSStringFromClass([TableViewCell class])]) {
         TableViewCell *rCell = ((TableViewCell *)cell);
         TableCellItemModel *rModel = ((TableCellItemModel *)model);
-        rCell.nameLab.text = rModel.itemId;
+        rCell.nameLab.text = rModel.name;
     } else
     if ([model.className isEqualToString:NSStringFromClass([TableView1Cell class])]) {
         TableView1Cell *rCell = ((TableView1Cell *)cell);
-        TableCellItemModel *rModel = ((TableCellItemModel *)model);
-        rCell.titleLab.text = rModel.itemId;
+        TableCellItemModel1 *rModel = ((TableCellItemModel1 *)model);
+        rCell.titleLab.text = rModel.title;
     }
 }
 @end
