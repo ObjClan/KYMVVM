@@ -33,7 +33,6 @@
 		EAA193502257453600E001B3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1934F2257453600E001B3 /* TableViewController.m */; };
 		EAA193532257455D00E001B3 /* TableCellItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA193522257455D00E001B3 /* TableCellItemModel.m */; };
 		EAA193562257457600E001B3 /* TableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA193552257457600E001B3 /* TableViewModel.m */; };
-		EAA193592257459900E001B3 /* TableCellSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA193582257459900E001B3 /* TableCellSectionModel.m */; };
 		EAA1935D225746A900E001B3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1935B225746A900E001B3 /* TableViewCell.m */; };
 		EAA1935E225746A900E001B3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA1935C225746A900E001B3 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -89,8 +88,6 @@
 		EAA193522257455D00E001B3 /* TableCellItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellItemModel.m; sourceTree = "<group>"; };
 		EAA193542257457600E001B3 /* TableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewModel.h; sourceTree = "<group>"; };
 		EAA193552257457600E001B3 /* TableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewModel.m; sourceTree = "<group>"; };
-		EAA193572257459900E001B3 /* TableCellSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellSectionModel.h; sourceTree = "<group>"; };
-		EAA193582257459900E001B3 /* TableCellSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellSectionModel.m; sourceTree = "<group>"; };
 		EAA1935A225746A900E001B3 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		EAA1935B225746A900E001B3 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		EAA1935C225746A900E001B3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -221,8 +218,6 @@
 				EA7D347922587BB7006917CE /* TableCellItemModel1.m */,
 				EAA193542257457600E001B3 /* TableViewModel.h */,
 				EAA193552257457600E001B3 /* TableViewModel.m */,
-				EAA193572257459900E001B3 /* TableCellSectionModel.h */,
-				EAA193582257459900E001B3 /* TableCellSectionModel.m */,
 				EAA1935A225746A900E001B3 /* TableViewCell.h */,
 				EAA1935B225746A900E001B3 /* TableViewCell.m */,
 				EAA1935C225746A900E001B3 /* TableViewCell.xib */,
@@ -359,7 +354,6 @@
 				EAA1933922571E9600E001B3 /* KYBaseTableCell.m in Sources */,
 				EAA1935D225746A900E001B3 /* TableViewCell.m in Sources */,
 				EAA1934A2257436E00E001B3 /* KYTableViewModel.m in Sources */,
-				EAA193592257459900E001B3 /* TableCellSectionModel.m in Sources */,
 				EAA193532257455D00E001B3 /* TableCellItemModel.m in Sources */,
 				EAA1933F22571EDF00E001B3 /* KYTableViewController.m in Sources */,
 				3070914922523AA3009D3520 /* KYBaseView.m in Sources */,

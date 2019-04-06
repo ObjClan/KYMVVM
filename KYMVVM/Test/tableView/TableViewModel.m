@@ -18,10 +18,10 @@ static NSString *const gameFirstItemId = @"gameFirstItemId";
 - (void)initData
 {
     //第一个section
-    TableCellSectionModel *userSection = [[TableCellSectionModel alloc] init];
+    KYBaseCellSectionModel *userSection = [[KYBaseCellSectionModel alloc] init];
     userSection.sectionId = userSectionId;
-    userSection.headerHeight = 20;
-    userSection.footerHeight = 10;
+    userSection.headerHeight = 80;
+    userSection.footerHeight = 20;
     //创建第1组的cell数据
     NSMutableArray *userItems = [[NSMutableArray alloc] init];
     for (int i = 0; i < 10; i++) {
@@ -35,7 +35,7 @@ static NSString *const gameFirstItemId = @"gameFirstItemId";
     userSection.itemsModels = userItems.copy;
 
     //第二个section
-    TableCellSectionModel *gameSection = [[TableCellSectionModel alloc] init];
+    KYBaseCellSectionModel *gameSection = [[KYBaseCellSectionModel alloc] init];
     gameSection.sectionId = gameSectionId;
     gameSection.footerHeight = 50;
     //创建第2组的cell数据
@@ -57,13 +57,13 @@ static NSString *const gameFirstItemId = @"gameFirstItemId";
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         //更新section
-        TableCellSectionModel *userSection = (TableCellSectionModel *)[self getSectionModelWithId:userSectionId];
+        KYBaseCellSectionModel *userSection = (KYBaseCellSectionModel *)[self getSectionModelWithId:userSectionId];
         //所有cell数据全部更新
         NSMutableArray *userItems = [[NSMutableArray alloc] init];
         for (int i = 0; i < 5; i++) {
             TableCellItemModel *item = [[TableCellItemModel alloc] init];
             item.name = [@(i) stringValue];
-            item.height = 30;
+            item.height = 60;
             item.className = @"TableViewCell";
             [userItems addObject:item];
         }
