@@ -17,11 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     ///处理tablview顶部有20的空白
-    if (@available(iOS 11.0, *)) {
-        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    } else {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 110000
+    self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever
+#esle
+    self.automaticallyAdjustsScrollViewInsets = NO;
+#endif
 }
 - (void)addSubViews
 {
