@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionView1Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ri4-pg-TxK">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="82"/>
+                        <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="a2k-5S-Yot"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuy-pc-PTH">
+                        <rect key="frame" x="230" y="21" width="80" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="cgy-Tq-UmW"/>
+                            <constraint firstAttribute="width" constant="80" id="nWM-sP-V0R"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ri4-pg-TxK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2cs-6C-fWI"/>
+                <constraint firstAttribute="trailing" secondItem="Nuy-pc-PTH" secondAttribute="trailing" constant="10" id="Ww9-uB-raD"/>
+                <constraint firstAttribute="bottom" secondItem="ri4-pg-TxK" secondAttribute="bottom" id="eRe-Bv-rP8"/>
+                <constraint firstItem="ri4-pg-TxK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wbM-0S-Z0w"/>
+                <constraint firstItem="Nuy-pc-PTH" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="yI3-Oe-qiF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="320" height="82"/>
+            <connections>
+                <outlet property="button" destination="Nuy-pc-PTH" id="7mF-lf-ZKj"/>
+            </connections>
+            <point key="canvasLocation" x="353.60000000000002" y="169.11544227886057"/>
+        </collectionViewCell>
+    </objects>
+</document>

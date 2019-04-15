@@ -8,9 +8,12 @@
 
 #import "KYBaseTableCell.h"
 
+@interface KYBaseTableCell ()
+
+@end
 @implementation KYBaseTableCell
 
-+ (KYBaseTableCell *)createWithTableView:(UITableView *)tableView
++ (KYBaseTableCell *)createWithTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath delegate:(id<KYTableViewCellProtocol>)delegate
 {
     NSString *identifier = NSStringFromClass([self class]);
     KYBaseTableCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
@@ -25,8 +28,9 @@
             [tableView registerNib:nil forCellReuseIdentifier:identifier];
             cell = [nib instantiateWithOwner:nib options:nil].firstObject;
         }
-        return cell;
+        cell.delegate = delegate;
     }
+    cell.indexPath = indexPath;
     return cell;
 }
 - (void)awakeFromNib {

@@ -8,9 +8,10 @@
 
 #import "KYBaseViewController.h"
 #import "KYTableViewModel.h"
+#import "KYBaseTableCell.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KYTableViewController : KYBaseViewController<UITableViewDelegate, UITableViewDataSource>
+@interface KYTableViewController : KYBaseViewController<UITableViewDelegate, UITableViewDataSource,KYTableViewCellProtocol>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) KYTableViewModel *viewModel;
 - (void)updateUIWithCell:(UITableViewCell *)cell model:(KYBaseCellItemModel *)model indexPath:(NSIndexPath *)indexPath;

@@ -20,10 +20,26 @@
 		3070914C22523B12009D3520 /* KYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070914B22523B12009D3520 /* KYBaseModel.m */; };
 		3070914F22523B29009D3520 /* KYBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070914E22523B29009D3520 /* KYBaseViewModel.m */; };
 		D48989349316A4C0D4B7B656 /* Pods_KYMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B799B61D5AF425A1ADE229 /* Pods_KYMVVM.framework */; };
+		EA4AD6AA225EE39C002688E4 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6A8225EE39C002688E4 /* GameViewController.m */; };
+		EA4AD6AE225EE452002688E4 /* GameViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6AD225EE452002688E4 /* GameViewModel.m */; };
+		EA4AD6B2225EE48F002688E4 /* GameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6B0225EE48F002688E4 /* GameCell.m */; };
+		EA4AD6B3225EE48F002688E4 /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4AD6B1225EE48F002688E4 /* GameCell.xib */; };
+		EA4AD6B6225EE4B5002688E4 /* GameItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6B5225EE4B5002688E4 /* GameItemModel.m */; };
+		EA4AD6BA225EEB7B002688E4 /* CollectionView2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6B8225EEB7B002688E4 /* CollectionView2Cell.m */; };
+		EA4AD6BB225EEB7B002688E4 /* CollectionView2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4AD6B9225EEB7B002688E4 /* CollectionView2Cell.xib */; };
 		EA7D3454225858E3006917CE /* TableView1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7D3452225858E3006917CE /* TableView1Cell.m */; };
 		EA7D3455225858E3006917CE /* TableView1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA7D3453225858E3006917CE /* TableView1Cell.xib */; };
 		EA7D347A22587BB7006917CE /* TableCellItemModel1.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7D347922587BB7006917CE /* TableCellItemModel1.m */; };
 		EA7D347C22589ED2006917CE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA7D347B22589ED2006917CE /* TableViewController.xib */; };
+		EA89E5C4225D993000560323 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA89E5C2225D993000560323 /* CollectionViewController.m */; };
+		EA89E5C5225D993000560323 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA89E5C3225D993000560323 /* CollectionViewController.xib */; };
+		EA89E5C8225D997D00560323 /* CollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA89E5C7225D997D00560323 /* CollectionViewModel.m */; };
+		EA89E5CE225D99D500560323 /* CollectionCellItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA89E5CD225D99D500560323 /* CollectionCellItemModel.m */; };
+		EA89E5D2225D99F400560323 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA89E5D0225D99F400560323 /* CollectionViewCell.m */; };
+		EA89E5D3225D99F400560323 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA89E5D1225D99F400560323 /* CollectionViewCell.xib */; };
+		EA8DC022225DD2C4009E0046 /* CollectionView1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8DC020225DD2C4009E0046 /* CollectionView1Cell.m */; };
+		EA8DC023225DD2C4009E0046 /* CollectionView1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8DC021225DD2C4009E0046 /* CollectionView1Cell.xib */; };
+		EA8DC026225DD509009E0046 /* CollectionCellItemModel1.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8DC025225DD509009E0046 /* CollectionCellItemModel1.m */; };
 		EAA1933922571E9600E001B3 /* KYBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1933822571E9600E001B3 /* KYBaseTableCell.m */; };
 		EAA1933C22571EB700E001B3 /* KYBaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1933B22571EB700E001B3 /* KYBaseCollectionCell.m */; };
 		EAA1933F22571EDF00E001B3 /* KYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1933E22571EDF00E001B3 /* KYTableViewController.m */; };
@@ -64,12 +80,39 @@
 		4E06B6C54B59B9FA0F51D11F /* Pods-KYMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMVVM.debug.xcconfig"; path = "Target Support Files/Pods-KYMVVM/Pods-KYMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		91B799B61D5AF425A1ADE229 /* Pods_KYMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		979FDF9121395D5EE9EB3AC3 /* Pods-KYMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMVVM.release.xcconfig"; path = "Target Support Files/Pods-KYMVVM/Pods-KYMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		EA4AD6A7225EE39C002688E4 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		EA4AD6A8225EE39C002688E4 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		EA4AD6AC225EE452002688E4 /* GameViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewModel.h; sourceTree = "<group>"; };
+		EA4AD6AD225EE452002688E4 /* GameViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewModel.m; sourceTree = "<group>"; };
+		EA4AD6AF225EE48F002688E4 /* GameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameCell.h; sourceTree = "<group>"; };
+		EA4AD6B0225EE48F002688E4 /* GameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameCell.m; sourceTree = "<group>"; };
+		EA4AD6B1225EE48F002688E4 /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
+		EA4AD6B4225EE4B5002688E4 /* GameItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameItemModel.h; sourceTree = "<group>"; };
+		EA4AD6B5225EE4B5002688E4 /* GameItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameItemModel.m; sourceTree = "<group>"; };
+		EA4AD6B7225EEB7B002688E4 /* CollectionView2Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionView2Cell.h; sourceTree = "<group>"; };
+		EA4AD6B8225EEB7B002688E4 /* CollectionView2Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionView2Cell.m; sourceTree = "<group>"; };
+		EA4AD6B9225EEB7B002688E4 /* CollectionView2Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionView2Cell.xib; sourceTree = "<group>"; };
 		EA7D3451225858E3006917CE /* TableView1Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableView1Cell.h; sourceTree = "<group>"; };
 		EA7D3452225858E3006917CE /* TableView1Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableView1Cell.m; sourceTree = "<group>"; };
 		EA7D3453225858E3006917CE /* TableView1Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableView1Cell.xib; sourceTree = "<group>"; };
 		EA7D347822587BB7006917CE /* TableCellItemModel1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellItemModel1.h; sourceTree = "<group>"; };
 		EA7D347922587BB7006917CE /* TableCellItemModel1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellItemModel1.m; sourceTree = "<group>"; };
 		EA7D347B22589ED2006917CE /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		EA89E5C1225D993000560323 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		EA89E5C2225D993000560323 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		EA89E5C3225D993000560323 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		EA89E5C6225D997D00560323 /* CollectionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewModel.h; sourceTree = "<group>"; };
+		EA89E5C7225D997D00560323 /* CollectionViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewModel.m; sourceTree = "<group>"; };
+		EA89E5CC225D99D500560323 /* CollectionCellItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionCellItemModel.h; sourceTree = "<group>"; };
+		EA89E5CD225D99D500560323 /* CollectionCellItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionCellItemModel.m; sourceTree = "<group>"; };
+		EA89E5CF225D99F400560323 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		EA89E5D0225D99F400560323 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		EA89E5D1225D99F400560323 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EA8DC01F225DD2C4009E0046 /* CollectionView1Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionView1Cell.h; sourceTree = "<group>"; };
+		EA8DC020225DD2C4009E0046 /* CollectionView1Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionView1Cell.m; sourceTree = "<group>"; };
+		EA8DC021225DD2C4009E0046 /* CollectionView1Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionView1Cell.xib; sourceTree = "<group>"; };
+		EA8DC024225DD509009E0046 /* CollectionCellItemModel1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionCellItemModel1.h; sourceTree = "<group>"; };
+		EA8DC025225DD509009E0046 /* CollectionCellItemModel1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionCellItemModel1.m; sourceTree = "<group>"; };
 		EAA1933722571E9600E001B3 /* KYBaseTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYBaseTableCell.h; sourceTree = "<group>"; };
 		EAA1933822571E9600E001B3 /* KYBaseTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYBaseTableCell.m; sourceTree = "<group>"; };
 		EAA1933A22571EB700E001B3 /* KYBaseCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYBaseCollectionCell.h; sourceTree = "<group>"; };
@@ -93,6 +136,7 @@
 		EAA1935A225746A900E001B3 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		EAA1935B225746A900E001B3 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		EAA1935C225746A900E001B3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EAD801D222601BD0004E36C0 /* KYTableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTableViewCellProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +232,7 @@
 				EAA1933E22571EDF00E001B3 /* KYTableViewController.m */,
 				EAA1934022571EF700E001B3 /* KYCollectionViewController.h */,
 				EAA1934122571EF700E001B3 /* KYCollectionViewController.m */,
+				EAD801D222601BD0004E36C0 /* KYTableViewCellProtocol.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -201,9 +246,52 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EA4AD6A6225EE352002688E4 /* subViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA4AD6A7225EE39C002688E4 /* GameViewController.h */,
+				EA4AD6A8225EE39C002688E4 /* GameViewController.m */,
+				EA4AD6AC225EE452002688E4 /* GameViewModel.h */,
+				EA4AD6AD225EE452002688E4 /* GameViewModel.m */,
+				EA4AD6AF225EE48F002688E4 /* GameCell.h */,
+				EA4AD6B0225EE48F002688E4 /* GameCell.m */,
+				EA4AD6B1225EE48F002688E4 /* GameCell.xib */,
+				EA4AD6B4225EE4B5002688E4 /* GameItemModel.h */,
+				EA4AD6B5225EE4B5002688E4 /* GameItemModel.m */,
+			);
+			path = subViewController;
+			sourceTree = "<group>";
+		};
+		EA89E5BF225D943B00560323 /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EA89E5C1225D993000560323 /* CollectionViewController.h */,
+				EA89E5C2225D993000560323 /* CollectionViewController.m */,
+				EA89E5C3225D993000560323 /* CollectionViewController.xib */,
+				EA89E5C6225D997D00560323 /* CollectionViewModel.h */,
+				EA89E5C7225D997D00560323 /* CollectionViewModel.m */,
+				EA89E5CC225D99D500560323 /* CollectionCellItemModel.h */,
+				EA89E5CD225D99D500560323 /* CollectionCellItemModel.m */,
+				EA8DC024225DD509009E0046 /* CollectionCellItemModel1.h */,
+				EA8DC025225DD509009E0046 /* CollectionCellItemModel1.m */,
+				EA89E5CF225D99F400560323 /* CollectionViewCell.h */,
+				EA89E5D0225D99F400560323 /* CollectionViewCell.m */,
+				EA89E5D1225D99F400560323 /* CollectionViewCell.xib */,
+				EA8DC01F225DD2C4009E0046 /* CollectionView1Cell.h */,
+				EA8DC020225DD2C4009E0046 /* CollectionView1Cell.m */,
+				EA8DC021225DD2C4009E0046 /* CollectionView1Cell.xib */,
+				EA4AD6B7225EEB7B002688E4 /* CollectionView2Cell.h */,
+				EA4AD6B8225EEB7B002688E4 /* CollectionView2Cell.m */,
+				EA4AD6B9225EEB7B002688E4 /* CollectionView2Cell.xib */,
+			);
+			path = collectionView;
+			sourceTree = "<group>";
+		};
 		EAA1934C2257450000E001B3 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				EA4AD6A6225EE352002688E4 /* subViewController */,
+				EA89E5BF225D943B00560323 /* collectionView */,
 				EAA1934D2257450900E001B3 /* tableView */,
 			);
 			path = Test;
@@ -273,6 +361,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -293,10 +382,15 @@
 			files = (
 				307091322250C496009D3520 /* LaunchScreen.storyboard in Resources */,
 				EA7D3455225858E3006917CE /* TableView1Cell.xib in Resources */,
+				EA89E5C5225D993000560323 /* CollectionViewController.xib in Resources */,
 				EAA1935E225746A900E001B3 /* TableViewCell.xib in Resources */,
+				EA4AD6BB225EEB7B002688E4 /* CollectionView2Cell.xib in Resources */,
 				EA7D347C22589ED2006917CE /* TableViewController.xib in Resources */,
+				EA8DC023225DD2C4009E0046 /* CollectionView1Cell.xib in Resources */,
 				3070912F2250C496009D3520 /* Assets.xcassets in Resources */,
+				EA89E5D3225D99F400560323 /* CollectionViewCell.xib in Resources */,
 				3070912D2250C496009D3520 /* Main.storyboard in Resources */,
+				EA4AD6B3225EE48F002688E4 /* GameCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,9 +444,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4AD6AE225EE452002688E4 /* GameViewModel.m in Sources */,
+				EA89E5C8225D997D00560323 /* CollectionViewModel.m in Sources */,
 				3070914C22523B12009D3520 /* KYBaseModel.m in Sources */,
 				3070914F22523B29009D3520 /* KYBaseViewModel.m in Sources */,
+				EA4AD6B6225EE4B5002688E4 /* GameItemModel.m in Sources */,
 				EAA193502257453600E001B3 /* TableViewController.m in Sources */,
+				EA89E5C4225D993000560323 /* CollectionViewController.m in Sources */,
+				EA8DC022225DD2C4009E0046 /* CollectionView1Cell.m in Sources */,
+				EA8DC026225DD509009E0046 /* CollectionCellItemModel1.m in Sources */,
 				EAA193562257457600E001B3 /* TableViewModel.m in Sources */,
 				3070912A2250C496009D3520 /* ViewController.m in Sources */,
 				EA7D3454225858E3006917CE /* TableView1Cell.m in Sources */,
@@ -360,15 +460,20 @@
 				EAA1933922571E9600E001B3 /* KYBaseTableCell.m in Sources */,
 				EAA1935D225746A900E001B3 /* TableViewCell.m in Sources */,
 				EAA1934A2257436E00E001B3 /* KYTableViewModel.m in Sources */,
+				EA89E5D2225D99F400560323 /* CollectionViewCell.m in Sources */,
+				EA89E5CE225D99D500560323 /* CollectionCellItemModel.m in Sources */,
 				EAA193532257455D00E001B3 /* TableCellItemModel.m in Sources */,
 				EAA1933F22571EDF00E001B3 /* KYTableViewController.m in Sources */,
 				3070914922523AA3009D3520 /* KYBaseView.m in Sources */,
 				EAA1934B2257436E00E001B3 /* KYBaseCellSectionModel.m in Sources */,
+				EA4AD6BA225EEB7B002688E4 /* CollectionView2Cell.m in Sources */,
+				EA4AD6AA225EE39C002688E4 /* GameViewController.m in Sources */,
 				30709143225239DB009D3520 /* KYNavigationController.m in Sources */,
 				307091272250C496009D3520 /* AppDelegate.m in Sources */,
 				3070914622523A4D009D3520 /* KYTabBarController.m in Sources */,
 				307091242250C496009D3520 /* main.m in Sources */,
 				EAA193492257436E00E001B3 /* KYBaseCellItemModel.m in Sources */,
+				EA4AD6B2225EE48F002688E4 /* GameCell.m in Sources */,
 				EA7D347A22587BB7006917CE /* TableCellItemModel1.m in Sources */,
 				EAA1934222571EF700E001B3 /* KYCollectionViewController.m in Sources */,
 				307091402250C622009D3520 /* KYBaseViewController.m in Sources */,
@@ -494,11 +599,15 @@
 			baseConfigurationReference = 4E06B6C54B59B9FA0F51D11F /* Pods-KYMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KYMVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "object-lan.KYMVVM";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KYMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -507,11 +616,15 @@
 			baseConfigurationReference = 979FDF9121395D5EE9EB3AC3 /* Pods-KYMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KYMVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "object-lan.KYMVVM";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KYMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

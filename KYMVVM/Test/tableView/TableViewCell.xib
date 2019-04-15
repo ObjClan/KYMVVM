@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,13 +32,22 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLF-C4-Ubf">
+                        <rect key="frame" x="192" y="46" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="btnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4wh-Ex-CBf"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ZMN-Q6-hVi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5NE-SF-u0f"/>
                     <constraint firstItem="OhH-n7-Z0f" firstAttribute="leading" secondItem="ZMN-Q6-hVi" secondAttribute="trailing" constant="30" id="Mau-Y9-xeN"/>
                     <constraint firstItem="ZMN-Q6-hVi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Oig-hV-ycX"/>
                     <constraint firstItem="OhH-n7-Z0f" firstAttribute="centerY" secondItem="ZMN-Q6-hVi" secondAttribute="centerY" id="VGz-AO-9G8"/>
+                    <constraint firstItem="uLF-C4-Ubf" firstAttribute="leading" secondItem="OhH-n7-Z0f" secondAttribute="trailing" constant="30" id="c7i-1B-zY1"/>
                     <constraint firstAttribute="bottom" secondItem="ZMN-Q6-hVi" secondAttribute="bottom" constant="10" id="gKm-wb-lKF"/>
+                    <constraint firstItem="uLF-C4-Ubf" firstAttribute="centerY" secondItem="OhH-n7-Z0f" secondAttribute="centerY" id="tXJ-4c-IEk"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>

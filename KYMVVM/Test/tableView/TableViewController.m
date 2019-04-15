@@ -20,8 +20,8 @@
 - (void)addBind
 {
     TableViewModel *viewModel = (TableViewModel *)self.viewModel;
-    @weakify(self)
     RAC(self,titleLB.text) = RACObserve(viewModel, title);
+    @weakify(self)
     [RACObserve(viewModel, shouldReload) subscribeNext:^(id  _Nullable x) {
         @strongify(self)
         if ([x boolValue]) [self.tableView reloadData];
@@ -66,4 +66,29 @@
         rCell.titleLab.text = rModel.title;
     }
 }
+- (void)cellAction:(id)cell sender:(UIView *)sender indexPath:(NSIndexPath *)indexPath object:(id)object
+{
+    if ([cell isKindOfClass:[TableViewCell class]]) {
+        NSLog(@"cell clicked Btn1 %@",indexPath);
+    } else
+    if ([cell isKindOfClass:[TableView1Cell class]]) {
+        int type = [object intValue];
+        switch (type) {
+            case 1:
+                NSLog(@"cell1 clicked Btn1 %@",indexPath);
+                break;
+            case 2:
+                NSLog(@"cell1 clicked Btn2 %@",indexPath);
+                break;
+            case 3: {
+                UISwitch *switchBtn = (UISwitch *)sender;
+                NSLog(@"cell1 %d---%@",switchBtn.on,indexPath);
+                break;
+            }
+            default:
+                break;
+        }
+    }
+}
+
 @end

@@ -20,5 +20,8 @@
 
     // Configure the view for the selected state
 }
+- (IBAction)btnClicked:(id)sender {
+    [self.delegate cellAction:self sender:sender indexPath:self.indexPath object:nil];
+}
 
 @end

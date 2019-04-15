@@ -29,7 +29,7 @@ static NSString *const gameFirstItemId = @"gameFirstItemId";
         item.itemId = @"";
         item.height = 80;
         item.className = @"TableViewCell";
-        item.name = [NSString stringWithFormat:@"headerItem_%d",i];
+        item.name = [NSString stringWithFormat:@"userItem_%d",i];
         [userItems addObject:item];
     }
     userSection.itemsModels = userItems.copy;

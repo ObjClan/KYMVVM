@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TableViewController.h"
+#import "CollectionViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,17 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor lightGrayColor];
 }
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Dispose of any resources that can be recre.ated.
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self presentViewController:[[TableViewController alloc] init] animated:YES completion:nil];
+//    [self presentViewController:[[TableViewController alloc] init] animated:YES completion:nil];
+    [self presentViewController:[[CollectionViewController alloc] init] animated:YES completion:nil];
 }
 
 @end

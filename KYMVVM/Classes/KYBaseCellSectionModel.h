@@ -30,6 +30,20 @@ NS_ASSUME_NONNULL_BEGIN
  headerHeight
  */
 @property (nonatomic, assign) CGFloat footerHeight;
+/**
+ section的minimumLineSpacing
+ */
+@property (nonatomic, assign) CGFloat minimumLineSpacing;
+/**
+ section的minimumInteritemSpacing
+ */
+@property (nonatomic, assign) CGFloat minimumInteritemSpacing;
+
+/**
+section的edgeInsets
+*/
+@property (nonatomic, assign) UIEdgeInsets edgeInsets;
+
 @end
 
 NS_ASSUME_NONNULL_END
