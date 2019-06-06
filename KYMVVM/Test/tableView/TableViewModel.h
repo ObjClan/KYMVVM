@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewModel : KYTableViewModel
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, assign) BOOL shouldReload;
+//更新某个cell
+- (void)updateOneCellContent;
 - (void)fetchTitle;
 @end
 

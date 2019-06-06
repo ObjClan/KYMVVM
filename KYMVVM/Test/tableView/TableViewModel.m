@@ -17,11 +17,30 @@ static NSString *const gameFirstItemId = @"gameFirstItemId";
 
 - (void)initData
 {
+    self.currentPage = 0;
+    self.pageCount = 20;
+}
+- (void)fetchDataWithIsRefresh:(BOOL)isRefresh
+{
+    [super fetchDataWithIsRefresh:isRefresh];
+    if (isRefresh) {
+        self.currentPage = 0;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self refreshDataComplete];
+        });
+    } else {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self loadMoreDataComplete];
+        });
+    }
+}
+- (void)refreshDataComplete
+{
     //第一个section
     KYBaseCellSectionModel *userSection = [[KYBaseCellSectionModel alloc] init];
     userSection.sectionId = userSectionId;
     userSection.headerHeight = 80;
-    userSection.footerHeight = 20;
+    
     //创建第1组的cell数据
     NSMutableArray *userItems = [[NSMutableArray alloc] init];
     for (int i = 0; i < 10; i++) {
@@ -33,11 +52,11 @@ static NSString *const gameFirstItemId = @"gameFirstItemId";
         [userItems addObject:item];
     }
     userSection.itemsModels = userItems.copy;
-
+    
     //第二个section
     KYBaseCellSectionModel *gameSection = [[KYBaseCellSectionModel alloc] init];
     gameSection.sectionId = gameSectionId;
-    gameSection.footerHeight = 50;
+    //    gameSection.footerHeight = 50;
     //创建第2组的cell数据
     NSMutableArray *gameItems = [[NSMutableArray alloc] init];
     for (int i = 0; i < 30; i++) {
@@ -52,33 +71,46 @@ static NSString *const gameFirstItemId = @"gameFirstItemId";
     
     self.sections = @[userSection,gameSection];
     
+    [self fetchDataCompleteWithIsRefresh:YES errorInfo:nil dataArray:self.sections];
 }
-- (void)fetchDataWithCompletion:(void (^)(void))completion
+- (void)loadMoreDataComplete
+{
+    //更新section
+    KYBaseCellSectionModel *gameSection = (KYBaseCellSectionModel *)[self getSectionModelWithId:gameSectionId];
+    
+    NSMutableArray *gameItems = (gameSection.itemsModels).mutableCopy;
+    
+    //无更多数据
+    if (gameSection.itemsModels.count > 50) {
+        self.loadDataStatus = KYLoadDataStatusNomore;
+        return;
+    }
+    for (NSInteger i = gameSection.itemsModels.count; i < gameSection.itemsModels.count + 20; i++) {
+        TableCellItemModel1 *item = [[TableCellItemModel1 alloc] init];
+        item.height = 70;
+        item.className = @"TableView1Cell";
+        item.title = [@(i) stringValue];
+        [gameItems addObject:item];
+    }
+    gameSection.itemsModels = gameItems.copy;
+    
+    [self fetchDataCompleteWithIsRefresh:NO errorInfo:nil dataArray:gameSection.itemsModels];
+}
+//更新某个cell
+- (void)updateOneCellContent
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        //更新section
-        KYBaseCellSectionModel *userSection = (KYBaseCellSectionModel *)[self getSectionModelWithId:userSectionId];
-        //所有cell数据全部更新
-        NSMutableArray *userItems = [[NSMutableArray alloc] init];
-        for (int i = 0; i < 5; i++) {
-            TableCellItemModel *item = [[TableCellItemModel alloc] init];
-            item.name = [@(i) stringValue];
-            item.height = 60;
-            item.className = @"TableViewCell";
-            [userItems addObject:item];
-        }
-        userSection.itemsModels = userItems.copy;
-        
-        //更新某个cell
+        //获取cell的model
         TableCellItemModel1 *item = (TableCellItemModel1 *)[self getItemModelWithSectionId:gameSectionId itemId:gameFirstItemId];
         //只更新title
         item.title = @"sdfdsfdsf";
-        self.shouldReload = YES;
-        if (completion) {
-            completion();
-        }
+        //获取cell的indexPath
+        NSIndexPath *indexPath = [self getIndexPathWithSectionId:gameSectionId itemId:gameFirstItemId];
+        //设置需要刷新的indexpath
+        self.reloadIndexPaths = @[indexPath];
     });
 }
+//更新非cell内容
 - (void)fetchTitle
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

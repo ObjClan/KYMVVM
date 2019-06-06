@@ -11,6 +11,7 @@ static NSString *const firstSectionId = @"firstSectionId";
 @implementation GameViewModel
 - (void)initData
 {
+    [self registerCellClass:@[@"GameCell"]];
     //第一个section
     KYBaseCellSectionModel *firstSection = [[KYBaseCellSectionModel alloc] init];
     firstSection.sectionId = firstSectionId;
@@ -27,7 +28,6 @@ static NSString *const firstSectionId = @"firstSectionId";
         item.height = 80;
         item.width = 150;
         item.className = @"GameCell";
-        [self registerCellName:item.className];
         item.name = [NSString stringWithFormat:@"Item_%d",i];
         [firstItems addObject:item];
     }

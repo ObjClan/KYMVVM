@@ -13,6 +13,50 @@
 
 @implementation KYCollectionViewController
 
+- (void)addBind
+{
+    @weakify(self)
+    [RACObserve(self.viewModel, shouldReloadData) subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        [self.collectionView reloadData];
+    }];
+    [RACObserve(self.viewModel, reloadIndexPaths) subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        [self.collectionView reloadItemsAtIndexPaths:self.viewModel.reloadIndexPaths];
+    }];
+    [RACObserve(self.viewModel, loadDataStatus) subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        KYLoadDataStatus status = [x integerValue];
+        switch (status) {
+            case KYLoadDataStatusPullDownLoading:
+                [self.collectionView.mj_footer resetNoMoreData];
+                break;
+            case KYLoadDataStatusPullDownSuccess:
+                [self.collectionView.mj_header endRefreshing];
+                break;
+            case KYLoadDataStatusPullDownEmpty:
+                [self.collectionView.mj_header endRefreshing];
+                break;
+            case KYLoadDataStatusPullDownFaild:
+                [self.collectionView.mj_header endRefreshing];
+                break;
+            case KYLoadDataStatusPullUpLoading:
+                break;
+            case KYLoadDataStatusPullUpSuccess:
+                [self.collectionView.mj_footer endRefreshing];
+                break;
+            case KYLoadDataStatusPullUpFaild:
+                [self.collectionView.mj_footer endRefreshing];
+                break;
+            case KYLoadDataStatusNomore:
+                [self.collectionView.mj_footer endRefreshingWithNoMoreData];
+                break;
+            default:
+                break;
+        }
+        [self.collectionView reloadData];
+    }];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor redColor];
@@ -22,7 +66,15 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    [self registerCellClass:self.viewModel.cellNames];
+    [self registerCellClass:self.viewModel.cellClassNames];
+    
+    if ([self shouldPullDownRefresh]) {
+        [self setMJHeader];
+        [self.collectionView.mj_header beginRefreshing];
+    }
+    if ([self shouldPullUpLoadMore]) {
+        [self setMJFooter];
+    }
 }
 - (void)registerCellClass:(NSArray<NSString *> *)classes
 {
@@ -69,6 +121,33 @@
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     return layout;
 }
+- (BOOL)shouldPullDownRefresh
+{
+    return NO;
+}
+- (BOOL)shouldPullUpLoadMore
+{
+    return NO;
+}
+- (void)setMJHeader
+{
+    @weakify(self)
+    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        @strongify(self)
+        [self.viewModel fetchDataWithIsRefresh:YES];
+    }];
+}
+- (void)setMJFooter
+{
+    @weakify(self)
+    self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        @strongify(self)
+        [self.viewModel fetchDataWithIsRefresh:NO];
+    }];
+    MJRefreshAutoNormalFooter *footer = (MJRefreshAutoNormalFooter *)self.collectionView.mj_footer;
+    footer.onlyRefreshPerDrag = YES;
+}
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return self.viewModel.sections.count;

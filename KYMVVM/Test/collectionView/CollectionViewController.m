@@ -31,6 +31,14 @@
     }
     return _viewModel;
 }
+- (BOOL)shouldPullUpLoadMore
+{
+    return YES;
+}
+- (BOOL)shouldPullDownRefresh
+{
+    return YES;
+}
 - (void)updateUIWithCell:(UICollectionViewCell *)cell model:(KYBaseCellItemModel *)model indexPath:(NSIndexPath *)indexPath
 {
     if ([model.className isEqualToString:NSStringFromClass([CollectionViewCell class])]) {

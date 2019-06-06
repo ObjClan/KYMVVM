@@ -22,7 +22,11 @@
 {
     
 }
-- (void)fetchDataWithCompletion:(void(^)(void))completion
+- (void)fetchDataWithIsRefresh:(BOOL)isRefresh
+{
+    
+}
+- (void)fetchDataCompleteWithIsRefresh:(BOOL)isRefresh errorInfo:(NSString *)errorInfo dataArray:(NSArray *)dataArray
 {
     
 }

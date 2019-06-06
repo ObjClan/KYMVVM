@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TableCellItemModel1 : KYBaseCellItemModel
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic, assign) BOOL isSwitchON;
 @end
 
 NS_ASSUME_NONNULL_END

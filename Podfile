@@ -9,4 +9,5 @@ target 'KYMVVM' do
   pod 'JSONModel'
   pod 'Masonry'
   pod 'ReactiveObjC'
+  pod 'MJRefresh', '~> 3.1.15.6'
 end

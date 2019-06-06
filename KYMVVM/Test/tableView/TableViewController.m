@@ -19,20 +19,19 @@
 
 - (void)addBind
 {
+    [super addBind];
+    
     TableViewModel *viewModel = (TableViewModel *)self.viewModel;
     RAC(self,titleLB.text) = RACObserve(viewModel, title);
-    @weakify(self)
-    [RACObserve(viewModel, shouldReload) subscribeNext:^(id  _Nullable x) {
-        @strongify(self)
-        if ([x boolValue]) [self.tableView reloadData];
-    }];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     TableViewModel *viewModel = (TableViewModel *)self.viewModel;
     [viewModel fetchTitle];
-    [viewModel fetchDataWithCompletion:nil];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [viewModel updateOneCellContent];
+    });
 }
 - (void)addSubViews
 {
@@ -53,6 +52,14 @@
     }
     return _viewModel;
 }
+- (BOOL)shouldPullDownRefresh
+{
+    return YES;
+}
+- (BOOL)shouldPullUpLoadMore
+{
+    return YES;
+}
 - (void)updateUIWithCell:(UITableViewCell *)cell model:(KYBaseCellItemModel *)model indexPath:(nonnull NSIndexPath *)indexPath
 {
     if ([model.className isEqualToString:NSStringFromClass([TableViewCell class])]) {
@@ -64,6 +71,7 @@
         TableView1Cell *rCell = ((TableView1Cell *)cell);
         TableCellItemModel1 *rModel = ((TableCellItemModel1 *)model);
         rCell.titleLab.text = rModel.title;
+        rCell.switchBtn.on = rModel.isSwitchON;
     }
 }
 - (void)cellAction:(id)cell sender:(UIView *)sender indexPath:(NSIndexPath *)indexPath object:(id)object
@@ -81,7 +89,10 @@
                 NSLog(@"cell1 clicked Btn2 %@",indexPath);
                 break;
             case 3: {
+                KYBaseCellItemModel *model = self.viewModel.sections[indexPath.section].itemsModels[indexPath.row];
+                TableCellItemModel1 *rModel = ((TableCellItemModel1 *)model);
                 UISwitch *switchBtn = (UISwitch *)sender;
+                rModel.isSwitchON = switchBtn.on;
                 NSLog(@"cell1 %d---%@",switchBtn.on,indexPath);
                 break;
             }

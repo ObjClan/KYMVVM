@@ -14,6 +14,50 @@
 
 @implementation KYTableViewController
 
+- (void)addBind
+{
+    @weakify(self)
+    [RACObserve(self.viewModel, shouldReloadData) subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        [self.tableView reloadData];
+    }];
+    [RACObserve(self.viewModel, reloadIndexPaths) subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        [self.tableView reloadRowsAtIndexPaths:self.viewModel.reloadIndexPaths withRowAnimation:UITableViewRowAnimationNone];
+    }];
+    [RACObserve(self.viewModel, loadDataStatus) subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        KYLoadDataStatus status = [x integerValue];
+        switch (status) {
+            case KYLoadDataStatusPullDownLoading:
+                [self.tableView.mj_footer resetNoMoreData];
+                break;
+            case KYLoadDataStatusPullDownSuccess:
+                [self.tableView.mj_header endRefreshing];
+                break;
+            case KYLoadDataStatusPullDownEmpty:
+                [self.tableView.mj_header endRefreshing];
+                break;
+            case KYLoadDataStatusPullDownFaild:
+                [self.tableView.mj_header endRefreshing];
+                break;
+            case KYLoadDataStatusPullUpLoading:
+                break;
+            case KYLoadDataStatusPullUpSuccess:
+                [self.tableView.mj_footer endRefreshing];
+                break;
+            case KYLoadDataStatusPullUpFaild:
+                [self.tableView.mj_footer endRefreshing];
+                break;
+            case KYLoadDataStatusNomore:
+                [self.tableView.mj_footer endRefreshingWithNoMoreData];
+                break;
+            default:
+                break;
+        }
+        [self.tableView reloadData];
+    }];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     ///处理tablview顶部有20的空白
@@ -23,6 +67,15 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    
+    if ([self shouldPullDownRefresh]) {
+        [self setMJHeader];
+        [self.tableView.mj_header beginRefreshing];
+    }
+    if ([self shouldPullUpLoadMore]) {
+        [self setMJFooter];
+    }
+    
 }
 - (void)addSubViews
 {
@@ -45,6 +98,32 @@
         _tableView.dataSource = self;
     }
     return _tableView;
+}
+- (BOOL)shouldPullDownRefresh
+{
+    return NO;
+}
+- (BOOL)shouldPullUpLoadMore
+{
+    return NO;
+}
+- (void)setMJHeader
+{
+    @weakify(self)
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        @strongify(self)
+        [self.viewModel fetchDataWithIsRefresh:YES];
+    }];
+}
+- (void)setMJFooter
+{
+    @weakify(self)
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        @strongify(self)
+        [self.viewModel fetchDataWithIsRefresh:NO];
+    }];
+    MJRefreshAutoNormalFooter *footer = (MJRefreshAutoNormalFooter *)self.tableView.mj_footer;
+    footer.onlyRefreshPerDrag = YES;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

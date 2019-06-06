@@ -9,11 +9,22 @@
 #import "KYBaseViewController.h"
 #import "KYTableViewModel.h"
 #import "KYBaseCollectionCell.h"
+#import <MJRefresh/MJRefresh.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KYCollectionViewController : KYBaseViewController<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,KYTableViewCellProtocol>
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) KYTableViewModel *viewModel;
+
+/**
+ 是否开启下拉刷新
+ */
+- (BOOL)shouldPullDownRefresh;
+
+/**
+ 是否开启上拉加载更多
+ */
+- (BOOL)shouldPullUpLoadMore;
 
 /**
  数据更新后，更新UI,，由子类重写
