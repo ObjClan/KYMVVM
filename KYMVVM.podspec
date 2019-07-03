@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KYMVVM" # 项目名称
-  s.version      = "1.0.0"        # 版本号 与 你仓库的 标签号 对应
+  s.version      = "1.0.1"        # 版本号 与 你仓库的 标签号 对应
   s.license      = "MIT"          # 开源证书
   s.summary      = "私人pod代码" # 项目简介
 
@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.dependency   'JSONModel', '~> 1.7.0' # 依赖库
   s.dependency   'Masonry', '~> 1.1.0'
   s.dependency   'ReactiveObjC', '~> 3.1.0'
+  s.dependency   'MJRefresh', '~> 3.1.15.6'
   # User
   s.author             = { "OBjClan" => "OBjClan@gmail.com" } # 作者信息
   #s.social_media_url   = "www.test.com" # 个人主页
