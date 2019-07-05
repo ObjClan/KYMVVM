@@ -75,7 +75,10 @@
     if ([self shouldPullUpLoadMore]) {
         [self setMJFooter];
     }
-    
+    if (!self.viewModel) {
+        NSString *errInfo = [NSString stringWithFormat:@"%@ viewModel不能为空，请重写viewModel的getter方法",NSStringFromClass([self class])] ;
+        @throw [NSException exceptionWithName:@"温馨提示" reason:errInfo userInfo:nil];
+    }
 }
 - (void)addSubViews
 {

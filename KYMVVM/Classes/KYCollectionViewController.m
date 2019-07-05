@@ -59,7 +59,6 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.collectionView.backgroundColor = [UIColor redColor];
     ///处理tablview顶部有20的空白
     if (@available(iOS 11.0, *)) {
         self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -74,6 +73,10 @@
     }
     if ([self shouldPullUpLoadMore]) {
         [self setMJFooter];
+    }
+    if (!self.viewModel) {
+        NSString *errInfo = [NSString stringWithFormat:@"%@ viewModel不能为空，请重写viewModel的getter方法",NSStringFromClass([self class])] ;
+        @throw [NSException exceptionWithName:@"温馨提示" reason:errInfo userInfo:nil];
     }
 }
 - (void)registerCellClass:(NSArray<NSString *> *)classes
