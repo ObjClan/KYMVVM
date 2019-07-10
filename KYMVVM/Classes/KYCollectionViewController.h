@@ -10,10 +10,11 @@
 #import "KYTableViewModel.h"
 #import "KYBaseCollectionCell.h"
 #import <MJRefresh/MJRefresh.h>
+#import "KYCollectionView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KYCollectionViewController : KYBaseViewController<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,KYTableViewCellProtocol>
-@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) KYCollectionView *collectionView;
 @property (nonatomic, strong) KYTableViewModel *viewModel;
 
 /**

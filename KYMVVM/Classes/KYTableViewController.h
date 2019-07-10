@@ -10,10 +10,11 @@
 #import "KYTableViewModel.h"
 #import "KYBaseTableCell.h"
 #import <MJRefresh/MJRefresh.h>
+#import "KYTableView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KYTableViewController : KYBaseViewController<UITableViewDelegate, UITableViewDataSource,KYTableViewCellProtocol>
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) KYTableView *tableView;
 @property (nonatomic, strong) KYTableViewModel *viewModel;
 
 /**

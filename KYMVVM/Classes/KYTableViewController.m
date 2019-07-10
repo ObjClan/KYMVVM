@@ -7,7 +7,7 @@
 //
 
 #import "KYTableViewController.h"
-
+#import <objc/message.h>
 @interface KYTableViewController ()
 
 @end
@@ -93,10 +93,10 @@
         make.bottom.equalTo(self.view);
     }];
 }
-- (UITableView *)tableView
+- (KYTableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] init];
+        _tableView = [[KYTableView alloc] init];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }
@@ -144,7 +144,13 @@
         @throw [NSException exceptionWithName:@"温馨提示" reason:errInfo userInfo:nil];
     }
     Class cellClass = NSClassFromString(model.className);
-    KYBaseTableCell *cell = [cellClass createWithTableView:tableView indexPath:indexPath delegate:self];
+    KYBaseTableCell *cell = [cellClass createWithTableView:tableView indexPath:indexPath delegate:self itemId:model.itemId];
+    SEL sel = NSSelectorFromString([NSString stringWithFormat:@"%@UpdateUIWithCell:model:indexPath:",model.itemId]);
+    if ([self respondsToSelector:sel]) {
+        void (*action)(id, SEL, KYBaseTableCell *, KYBaseCellItemModel *,NSIndexPath *) =
+        (void (*)(id, SEL, KYBaseTableCell *, KYBaseCellItemModel *,NSIndexPath *)) objc_msgSend;
+        action(self,sel,cell,model,indexPath);
+    }
     [self updateUIWithCell:cell model:model indexPath:indexPath];
     return cell;
 }
@@ -169,6 +175,14 @@
 {
     CGFloat height = self.viewModel.sections[section].footerHeight;
     return height;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    KYBaseTableCell *cell = (KYBaseTableCell *)[tableView cellForRowAtIndexPath:indexPath];
+    if (cell.denySelect) {
+        return;
+    }
+    [cell actionWithSender:nil object:nil];
 }
 - (void)updateUIWithCell:(UITableViewCell *)cell model:(KYBaseCellItemModel *)model indexPath:(NSIndexPath *)indexPath
 {

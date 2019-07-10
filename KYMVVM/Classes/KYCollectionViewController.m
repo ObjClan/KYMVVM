@@ -109,11 +109,11 @@
         make.bottom.equalTo(self.view);
     }];
 }
-- (UICollectionView *)collectionView
+- (KYCollectionView *)collectionView
 {
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [self collectionViewFlowLayout];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        _collectionView = [[KYCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
     }
@@ -169,6 +169,13 @@
     KYBaseCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:model.className forIndexPath:indexPath];
     cell.indexPath = indexPath;
     cell.delegate = self;
+    cell.itemId = model.itemId;
+    SEL sel = NSSelectorFromString([NSString stringWithFormat:@"%@UpdateUIWithCell:model:indexPath:",model.itemId]);
+    if ([self respondsToSelector:sel]) {
+        void (*action)(id, SEL, KYBaseCollectionCell *, KYBaseCellItemModel *,NSIndexPath *) =
+        (void (*)(id, SEL, KYBaseCollectionCell *, KYBaseCellItemModel *,NSIndexPath *)) objc_msgSend;
+        action(self,sel,cell,model,indexPath);
+    }
     [self updateUIWithCell:cell model:model indexPath:indexPath];
     return cell;
 }
@@ -205,6 +212,14 @@
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     return self.viewModel.sections[section].edgeInsets;
+}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    KYBaseCollectionCell *cell = (KYBaseCollectionCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    if (cell.denySelect) {
+        return;
+    }
+    [cell actionWithSender:nil object:nil];
 }
 - (void)updateUIWithCell:(UICollectionViewCell *)cell model:(KYBaseCellItemModel *)model indexPath:(NSIndexPath *)indexPath
 {

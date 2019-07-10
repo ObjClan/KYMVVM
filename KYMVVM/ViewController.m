@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TableViewController.h"
 #import "CollectionViewController.h"
+#import "KYLoginColletctionViewController.h"
 @interface ViewController ()
 
 @end
@@ -26,7 +27,8 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
 //    [self presentViewController:[[TableViewController alloc] init] animated:YES completion:nil];
-    [self presentViewController:[[CollectionViewController alloc] init] animated:YES completion:nil];
+//    [self presentViewController:[[CollectionViewController alloc] init] animated:YES completion:nil];
+    [self presentViewController:[[KYLoginColletctionViewController alloc] init] animated:YES completion:nil];
 }
 
 @end
