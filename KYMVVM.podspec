@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KYMVVM" # 项目名称
-  s.version      = "1.0.3"        # 版本号 与 你仓库的 标签号 对应
+  s.version      = "1.0.4"        # 版本号 与 你仓库的 标签号 对应
   s.license      = "MIT"          # 开源证书
   s.summary      = "私人pod代码" # 项目简介
 
@@ -17,5 +17,26 @@ Pod::Spec.new do |s|
   # User
   s.author             = { "OBjClan" => "OBjClan@gmail.com" } # 作者信息
   #s.social_media_url   = "www.test.com" # 个人主页
-
+  s.subspec 'Base' do |ss|
+    ss.source_files = 'KYMVVM/Classes/Base/*'
+    ss.subspec 'Model' do |sss|
+        sss.source_files = 'KYMVVM/Classes/Base/Model/*'
+    end
+    ss.subspec 'View' do |sss|
+        sss.source_files = 'KYMVVM/Classes/Base/View/*'
+        sss.dependency 'KYMVVM/Base/Protocol'
+    end
+    ss.subspec 'Controller' do |sss|
+        sss.source_files = 'KYMVVM/Classes/Base/Controller/*'
+        sss.dependency 'KYMVVM/Base/ViewModel'
+        sss.dependency 'KYMVVM/Base/View'
+    end
+    ss.subspec 'ViewModel' do |sss|
+        sss.source_files = 'KYMVVM/Classes/Base/ViewModel/*'
+        sss.dependency 'KYMVVM/Base/Model'
+    end
+    ss.subspec 'Protocol' do |sss|
+        sss.source_files = 'KYMVVM/Classes/Base/Protocol/*'
+    end
+  end
 end

@@ -26,15 +26,28 @@
 		EA2E907522D47686007A81C7 /* KYLeftTitleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E907422D47686007A81C7 /* KYLeftTitleTextField.m */; };
 		EA2E907822D477E0007A81C7 /* KYPhoneVerifyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E907722D477E0007A81C7 /* KYPhoneVerifyTextField.m */; };
 		EA2E907C22D479A5007A81C7 /* KYLoginAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E907A22D479A5007A81C7 /* KYLoginAccountCell.m */; };
-		EA2E907D22D479A5007A81C7 /* KYLoginAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E907B22D479A5007A81C7 /* KYLoginAccountCell.xib */; };
 		EA2E908022D47A9D007A81C7 /* KYLoginItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E907F22D47A9D007A81C7 /* KYLoginItemModel.m */; };
 		EA2E908422D4817D007A81C7 /* KYLoginVerifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E908222D4817D007A81C7 /* KYLoginVerifyCell.m */; };
-		EA2E908522D4817D007A81C7 /* KYLoginVerifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E908322D4817D007A81C7 /* KYLoginVerifyCell.xib */; };
 		EA2E908922D485F6007A81C7 /* KYLoginSubmitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E908722D485F6007A81C7 /* KYLoginSubmitCell.m */; };
 		EA2E908A22D485F6007A81C7 /* KYLoginSubmitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E908822D485F6007A81C7 /* KYLoginSubmitCell.xib */; };
 		EA2E908D22D595C0007A81C7 /* KYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E908C22D595C0007A81C7 /* KYTableView.m */; };
 		EA2E909022D595FA007A81C7 /* KYCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E908F22D595FA007A81C7 /* KYCollectionView.m */; };
 		EA2E909322D5B3BA007A81C7 /* UIView+KYMVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E909222D5B3BA007A81C7 /* UIView+KYMVVM.m */; };
+		EA2E909822D703C9007A81C7 /* KYOneTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E909722D703C9007A81C7 /* KYOneTextFieldCell.m */; };
+		EA2E909A22D70811007A81C7 /* KYLoginVerifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E909922D70811007A81C7 /* KYLoginVerifyCell.xib */; };
+		EA2E90C522D7160E007A81C7 /* create.py in Resources */ = {isa = PBXBuildFile; fileRef = EA2E90A122D7160D007A81C7 /* create.py */; };
+		EA2E90C622D7160E007A81C7 /* KYTemplateTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90A522D7160D007A81C7 /* KYTemplateTableViewModel.m */; };
+		EA2E90C722D7160E007A81C7 /* KYTemplateTableSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90A722D7160D007A81C7 /* KYTemplateTableSectionModel.m */; };
+		EA2E90C822D7160E007A81C7 /* KYTemplateTableItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90A822D7160D007A81C7 /* KYTemplateTableItemModel.m */; };
+		EA2E90C922D7160E007A81C7 /* KYTemplateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90AD22D7160D007A81C7 /* KYTemplateTableViewController.m */; };
+		EA2E90CC22D7160E007A81C7 /* KYTemplateTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90B222D7160D007A81C7 /* KYTemplateTableCell.m */; };
+		EA2E90CD22D7160E007A81C7 /* KYTemplateTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E90B322D7160D007A81C7 /* KYTemplateTableCell.xib */; };
+		EA2E90CE22D7160E007A81C7 /* KYTemplateCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90B822D7160E007A81C7 /* KYTemplateCollectionViewModel.m */; };
+		EA2E90CF22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90BA22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m */; };
+		EA2E90D022D7160E007A81C7 /* KYTemplateCollectionItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90BB22D7160E007A81C7 /* KYTemplateCollectionItemModel.m */; };
+		EA2E90D122D7160E007A81C7 /* KYTemplateColletctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90C022D7160E007A81C7 /* KYTemplateColletctionViewController.m */; };
+		EA2E90D222D7160E007A81C7 /* KYTemplateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90C222D7160E007A81C7 /* KYTemplateCollectionViewCell.m */; };
+		EA2E90D322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E90C322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib */; };
 		EA4AD6AA225EE39C002688E4 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6A8225EE39C002688E4 /* GameViewController.m */; };
 		EA4AD6AE225EE452002688E4 /* GameViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6AD225EE452002688E4 /* GameViewModel.m */; };
 		EA4AD6B2225EE48F002688E4 /* GameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6B0225EE48F002688E4 /* GameCell.m */; };
@@ -107,12 +120,10 @@
 		EA2E907722D477E0007A81C7 /* KYPhoneVerifyTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYPhoneVerifyTextField.m; sourceTree = "<group>"; };
 		EA2E907922D479A5007A81C7 /* KYLoginAccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYLoginAccountCell.h; sourceTree = "<group>"; };
 		EA2E907A22D479A5007A81C7 /* KYLoginAccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLoginAccountCell.m; sourceTree = "<group>"; };
-		EA2E907B22D479A5007A81C7 /* KYLoginAccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KYLoginAccountCell.xib; sourceTree = "<group>"; };
 		EA2E907E22D47A9D007A81C7 /* KYLoginItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYLoginItemModel.h; sourceTree = "<group>"; };
 		EA2E907F22D47A9D007A81C7 /* KYLoginItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLoginItemModel.m; sourceTree = "<group>"; };
 		EA2E908122D4817D007A81C7 /* KYLoginVerifyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYLoginVerifyCell.h; sourceTree = "<group>"; };
 		EA2E908222D4817D007A81C7 /* KYLoginVerifyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLoginVerifyCell.m; sourceTree = "<group>"; };
-		EA2E908322D4817D007A81C7 /* KYLoginVerifyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KYLoginVerifyCell.xib; sourceTree = "<group>"; };
 		EA2E908622D485F6007A81C7 /* KYLoginSubmitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYLoginSubmitCell.h; sourceTree = "<group>"; };
 		EA2E908722D485F6007A81C7 /* KYLoginSubmitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLoginSubmitCell.m; sourceTree = "<group>"; };
 		EA2E908822D485F6007A81C7 /* KYLoginSubmitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KYLoginSubmitCell.xib; sourceTree = "<group>"; };
@@ -122,6 +133,32 @@
 		EA2E908F22D595FA007A81C7 /* KYCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYCollectionView.m; sourceTree = "<group>"; };
 		EA2E909122D5B3BA007A81C7 /* UIView+KYMVVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+KYMVVM.h"; sourceTree = "<group>"; };
 		EA2E909222D5B3BA007A81C7 /* UIView+KYMVVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+KYMVVM.m"; sourceTree = "<group>"; };
+		EA2E909622D703C9007A81C7 /* KYOneTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYOneTextFieldCell.h; sourceTree = "<group>"; };
+		EA2E909722D703C9007A81C7 /* KYOneTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYOneTextFieldCell.m; sourceTree = "<group>"; };
+		EA2E909922D70811007A81C7 /* KYLoginVerifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYLoginVerifyCell.xib; sourceTree = "<group>"; };
+		EA2E90A122D7160D007A81C7 /* create.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = create.py; sourceTree = "<group>"; };
+		EA2E90A422D7160D007A81C7 /* KYTemplateTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateTableViewModel.h; sourceTree = "<group>"; };
+		EA2E90A522D7160D007A81C7 /* KYTemplateTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateTableViewModel.m; sourceTree = "<group>"; };
+		EA2E90A722D7160D007A81C7 /* KYTemplateTableSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateTableSectionModel.m; sourceTree = "<group>"; };
+		EA2E90A822D7160D007A81C7 /* KYTemplateTableItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateTableItemModel.m; sourceTree = "<group>"; };
+		EA2E90A922D7160D007A81C7 /* KYTemplateTableSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateTableSectionModel.h; sourceTree = "<group>"; };
+		EA2E90AA22D7160D007A81C7 /* KYTemplateTableItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateTableItemModel.h; sourceTree = "<group>"; };
+		EA2E90AD22D7160D007A81C7 /* KYTemplateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateTableViewController.m; sourceTree = "<group>"; };
+		EA2E90AE22D7160D007A81C7 /* KYTemplateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateTableViewController.h; sourceTree = "<group>"; };
+		EA2E90B222D7160D007A81C7 /* KYTemplateTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateTableCell.m; sourceTree = "<group>"; };
+		EA2E90B322D7160D007A81C7 /* KYTemplateTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYTemplateTableCell.xib; sourceTree = "<group>"; };
+		EA2E90B422D7160D007A81C7 /* KYTemplateTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateTableCell.h; sourceTree = "<group>"; };
+		EA2E90B722D7160E007A81C7 /* KYTemplateCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionViewModel.h; sourceTree = "<group>"; };
+		EA2E90B822D7160E007A81C7 /* KYTemplateCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateCollectionViewModel.m; sourceTree = "<group>"; };
+		EA2E90BA22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateCollectionSectionModel.m; sourceTree = "<group>"; };
+		EA2E90BB22D7160E007A81C7 /* KYTemplateCollectionItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateCollectionItemModel.m; sourceTree = "<group>"; };
+		EA2E90BC22D7160E007A81C7 /* KYTemplateCollectionSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionSectionModel.h; sourceTree = "<group>"; };
+		EA2E90BD22D7160E007A81C7 /* KYTemplateCollectionItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionItemModel.h; sourceTree = "<group>"; };
+		EA2E90BF22D7160E007A81C7 /* KYTemplateColletctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateColletctionViewController.h; sourceTree = "<group>"; };
+		EA2E90C022D7160E007A81C7 /* KYTemplateColletctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateColletctionViewController.m; sourceTree = "<group>"; };
+		EA2E90C222D7160E007A81C7 /* KYTemplateCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateCollectionViewCell.m; sourceTree = "<group>"; };
+		EA2E90C322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYTemplateCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA2E90C422D7160E007A81C7 /* KYTemplateCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionViewCell.h; sourceTree = "<group>"; };
 		EA4AD6A7225EE39C002688E4 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		EA4AD6A8225EE39C002688E4 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		EA4AD6AC225EE452002688E4 /* GameViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewModel.h; sourceTree = "<group>"; };
@@ -248,39 +285,8 @@
 		3070913D2250C622009D3520 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EAA193482257436E00E001B3 /* KYBaseCellItemModel.h */,
-				EAA193452257436D00E001B3 /* KYBaseCellItemModel.m */,
-				EAA193432257436B00E001B3 /* KYBaseCellSectionModel.h */,
-				EAA193472257436D00E001B3 /* KYBaseCellSectionModel.m */,
-				EAA193442257436C00E001B3 /* KYTableViewModel.h */,
-				EAA193462257436D00E001B3 /* KYTableViewModel.m */,
-				3070913E2250C622009D3520 /* KYBaseViewController.h */,
-				3070913F2250C622009D3520 /* KYBaseViewController.m */,
-				30709141225239DB009D3520 /* KYNavigationController.h */,
-				30709142225239DB009D3520 /* KYNavigationController.m */,
-				3070914422523A4D009D3520 /* KYTabBarController.h */,
-				3070914522523A4D009D3520 /* KYTabBarController.m */,
-				3070914722523AA3009D3520 /* KYBaseView.h */,
-				3070914822523AA3009D3520 /* KYBaseView.m */,
-				EA2E908B22D595C0007A81C7 /* KYTableView.h */,
-				EA2E908C22D595C0007A81C7 /* KYTableView.m */,
-				EA2E908E22D595FA007A81C7 /* KYCollectionView.h */,
-				EA2E908F22D595FA007A81C7 /* KYCollectionView.m */,
-				3070914A22523B12009D3520 /* KYBaseModel.h */,
-				3070914B22523B12009D3520 /* KYBaseModel.m */,
-				3070914D22523B29009D3520 /* KYBaseViewModel.h */,
-				3070914E22523B29009D3520 /* KYBaseViewModel.m */,
-				EAA1933722571E9600E001B3 /* KYBaseTableCell.h */,
-				EAA1933822571E9600E001B3 /* KYBaseTableCell.m */,
-				EAA1933A22571EB700E001B3 /* KYBaseCollectionCell.h */,
-				EAA1933B22571EB700E001B3 /* KYBaseCollectionCell.m */,
-				EAA1933D22571EDF00E001B3 /* KYTableViewController.h */,
-				EAA1933E22571EDF00E001B3 /* KYTableViewController.m */,
-				EAA1934022571EF700E001B3 /* KYCollectionViewController.h */,
-				EAA1934122571EF700E001B3 /* KYCollectionViewController.m */,
-				EAD801D222601BD0004E36C0 /* KYTableViewCellProtocol.h */,
-				EA2E909122D5B3BA007A81C7 /* UIView+KYMVVM.h */,
-				EA2E909222D5B3BA007A81C7 /* UIView+KYMVVM.m */,
+				EA2E90A022D715C4007A81C7 /* Template */,
+				EA2E909F22D715BD007A81C7 /* Base */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -325,13 +331,14 @@
 				EA2E907722D477E0007A81C7 /* KYPhoneVerifyTextField.m */,
 				EA2E907922D479A5007A81C7 /* KYLoginAccountCell.h */,
 				EA2E907A22D479A5007A81C7 /* KYLoginAccountCell.m */,
-				EA2E907B22D479A5007A81C7 /* KYLoginAccountCell.xib */,
 				EA2E908122D4817D007A81C7 /* KYLoginVerifyCell.h */,
 				EA2E908222D4817D007A81C7 /* KYLoginVerifyCell.m */,
-				EA2E908322D4817D007A81C7 /* KYLoginVerifyCell.xib */,
+				EA2E909922D70811007A81C7 /* KYLoginVerifyCell.xib */,
 				EA2E908622D485F6007A81C7 /* KYLoginSubmitCell.h */,
 				EA2E908722D485F6007A81C7 /* KYLoginSubmitCell.m */,
 				EA2E908822D485F6007A81C7 /* KYLoginSubmitCell.xib */,
+				EA2E909622D703C9007A81C7 /* KYOneTextFieldCell.h */,
+				EA2E909722D703C9007A81C7 /* KYOneTextFieldCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -352,6 +359,196 @@
 				EA2E906B22D4735B007A81C7 /* KYLoginCollectionViewModel.m */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EA2E909B22D7158B007A81C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3070914A22523B12009D3520 /* KYBaseModel.h */,
+				3070914B22523B12009D3520 /* KYBaseModel.m */,
+				EAA193482257436E00E001B3 /* KYBaseCellItemModel.h */,
+				EAA193452257436D00E001B3 /* KYBaseCellItemModel.m */,
+				EAA193432257436B00E001B3 /* KYBaseCellSectionModel.h */,
+				EAA193472257436D00E001B3 /* KYBaseCellSectionModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA2E909C22D71597007A81C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3070914D22523B29009D3520 /* KYBaseViewModel.h */,
+				3070914E22523B29009D3520 /* KYBaseViewModel.m */,
+				EAA193442257436C00E001B3 /* KYTableViewModel.h */,
+				EAA193462257436D00E001B3 /* KYTableViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA2E909D22D715A4007A81C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3070913E2250C622009D3520 /* KYBaseViewController.h */,
+				3070913F2250C622009D3520 /* KYBaseViewController.m */,
+				30709141225239DB009D3520 /* KYNavigationController.h */,
+				30709142225239DB009D3520 /* KYNavigationController.m */,
+				3070914422523A4D009D3520 /* KYTabBarController.h */,
+				3070914522523A4D009D3520 /* KYTabBarController.m */,
+				EAA1933D22571EDF00E001B3 /* KYTableViewController.h */,
+				EAA1933E22571EDF00E001B3 /* KYTableViewController.m */,
+				EAA1934022571EF700E001B3 /* KYCollectionViewController.h */,
+				EAA1934122571EF700E001B3 /* KYCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA2E909E22D715AB007A81C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3070914722523AA3009D3520 /* KYBaseView.h */,
+				3070914822523AA3009D3520 /* KYBaseView.m */,
+				EA2E908B22D595C0007A81C7 /* KYTableView.h */,
+				EA2E908C22D595C0007A81C7 /* KYTableView.m */,
+				EA2E908E22D595FA007A81C7 /* KYCollectionView.h */,
+				EA2E908F22D595FA007A81C7 /* KYCollectionView.m */,
+				EAA1933722571E9600E001B3 /* KYBaseTableCell.h */,
+				EAA1933822571E9600E001B3 /* KYBaseTableCell.m */,
+				EAA1933A22571EB700E001B3 /* KYBaseCollectionCell.h */,
+				EAA1933B22571EB700E001B3 /* KYBaseCollectionCell.m */,
+				EA2E909122D5B3BA007A81C7 /* UIView+KYMVVM.h */,
+				EA2E909222D5B3BA007A81C7 /* UIView+KYMVVM.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA2E909F22D715BD007A81C7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90D422D716BF007A81C7 /* Protocol */,
+				EA2E909E22D715AB007A81C7 /* View */,
+				EA2E909D22D715A4007A81C7 /* Controller */,
+				EA2E909C22D71597007A81C7 /* ViewModel */,
+				EA2E909B22D7158B007A81C7 /* Model */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EA2E90A022D715C4007A81C7 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90A122D7160D007A81C7 /* create.py */,
+				EA2E90B522D7160E007A81C7 /* KYTemplateCollection */,
+				EA2E90A222D7160D007A81C7 /* KYTemplateTable */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		EA2E90A222D7160D007A81C7 /* KYTemplateTable */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90A322D7160D007A81C7 /* ViewModels */,
+				EA2E90A622D7160D007A81C7 /* Models */,
+				EA2E90AB22D7160D007A81C7 /* Controllers */,
+				EA2E90B122D7160D007A81C7 /* Views */,
+			);
+			path = KYTemplateTable;
+			sourceTree = "<group>";
+		};
+		EA2E90A322D7160D007A81C7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90A422D7160D007A81C7 /* KYTemplateTableViewModel.h */,
+				EA2E90A522D7160D007A81C7 /* KYTemplateTableViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EA2E90A622D7160D007A81C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90AA22D7160D007A81C7 /* KYTemplateTableItemModel.h */,
+				EA2E90A822D7160D007A81C7 /* KYTemplateTableItemModel.m */,
+				EA2E90A922D7160D007A81C7 /* KYTemplateTableSectionModel.h */,
+				EA2E90A722D7160D007A81C7 /* KYTemplateTableSectionModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA2E90AB22D7160D007A81C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90AE22D7160D007A81C7 /* KYTemplateTableViewController.h */,
+				EA2E90AD22D7160D007A81C7 /* KYTemplateTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA2E90B122D7160D007A81C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90B422D7160D007A81C7 /* KYTemplateTableCell.h */,
+				EA2E90B222D7160D007A81C7 /* KYTemplateTableCell.m */,
+				EA2E90B322D7160D007A81C7 /* KYTemplateTableCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA2E90B522D7160E007A81C7 /* KYTemplateCollection */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90B622D7160E007A81C7 /* ViewModels */,
+				EA2E90B922D7160E007A81C7 /* Models */,
+				EA2E90BE22D7160E007A81C7 /* Controller */,
+				EA2E90C122D7160E007A81C7 /* Views */,
+			);
+			path = KYTemplateCollection;
+			sourceTree = "<group>";
+		};
+		EA2E90B622D7160E007A81C7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90B722D7160E007A81C7 /* KYTemplateCollectionViewModel.h */,
+				EA2E90B822D7160E007A81C7 /* KYTemplateCollectionViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EA2E90B922D7160E007A81C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90BD22D7160E007A81C7 /* KYTemplateCollectionItemModel.h */,
+				EA2E90BB22D7160E007A81C7 /* KYTemplateCollectionItemModel.m */,
+				EA2E90BC22D7160E007A81C7 /* KYTemplateCollectionSectionModel.h */,
+				EA2E90BA22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA2E90BE22D7160E007A81C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90BF22D7160E007A81C7 /* KYTemplateColletctionViewController.h */,
+				EA2E90C022D7160E007A81C7 /* KYTemplateColletctionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA2E90C122D7160E007A81C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90C422D7160E007A81C7 /* KYTemplateCollectionViewCell.h */,
+				EA2E90C222D7160E007A81C7 /* KYTemplateCollectionViewCell.m */,
+				EA2E90C322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA2E90D422D716BF007A81C7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EAD801D222601BD0004E36C0 /* KYTableViewCellProtocol.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		EA4AD6A6225EE352002688E4 /* subViewController */ = {
@@ -489,20 +686,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA2E907D22D479A5007A81C7 /* KYLoginAccountCell.xib in Resources */,
 				307091322250C496009D3520 /* LaunchScreen.storyboard in Resources */,
 				EA7D3455225858E3006917CE /* TableView1Cell.xib in Resources */,
 				EA89E5C5225D993000560323 /* CollectionViewController.xib in Resources */,
-				EA2E908522D4817D007A81C7 /* KYLoginVerifyCell.xib in Resources */,
 				EA2E908A22D485F6007A81C7 /* KYLoginSubmitCell.xib in Resources */,
+				EA2E909A22D70811007A81C7 /* KYLoginVerifyCell.xib in Resources */,
 				EAA1935E225746A900E001B3 /* TableViewCell.xib in Resources */,
 				EA4AD6BB225EEB7B002688E4 /* CollectionView2Cell.xib in Resources */,
 				EA7D347C22589ED2006917CE /* TableViewController.xib in Resources */,
+				EA2E90D322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib in Resources */,
 				EA8DC023225DD2C4009E0046 /* CollectionView1Cell.xib in Resources */,
 				3070912F2250C496009D3520 /* Assets.xcassets in Resources */,
 				EA89E5D3225D99F400560323 /* CollectionViewCell.xib in Resources */,
 				3070912D2250C496009D3520 /* Main.storyboard in Resources */,
+				EA2E90C522D7160E007A81C7 /* create.py in Resources */,
 				EA4AD6B3225EE48F002688E4 /* GameCell.xib in Resources */,
+				EA2E90CD22D7160E007A81C7 /* KYTemplateTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,15 +762,19 @@
 				EA89E5C8225D997D00560323 /* CollectionViewModel.m in Sources */,
 				3070914C22523B12009D3520 /* KYBaseModel.m in Sources */,
 				3070914F22523B29009D3520 /* KYBaseViewModel.m in Sources */,
+				EA2E90CF22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m in Sources */,
 				EA4AD6B6225EE4B5002688E4 /* GameItemModel.m in Sources */,
 				EAA193502257453600E001B3 /* TableViewController.m in Sources */,
 				EA89E5C4225D993000560323 /* CollectionViewController.m in Sources */,
 				EA8DC022225DD2C4009E0046 /* CollectionView1Cell.m in Sources */,
+				EA2E90D022D7160E007A81C7 /* KYTemplateCollectionItemModel.m in Sources */,
 				EA8DC026225DD509009E0046 /* CollectionCellItemModel1.m in Sources */,
+				EA2E90D222D7160E007A81C7 /* KYTemplateCollectionViewCell.m in Sources */,
 				EAA193562257457600E001B3 /* TableViewModel.m in Sources */,
 				3070912A2250C496009D3520 /* ViewController.m in Sources */,
 				EA7D3454225858E3006917CE /* TableView1Cell.m in Sources */,
 				EA2E908022D47A9D007A81C7 /* KYLoginItemModel.m in Sources */,
+				EA2E90C722D7160E007A81C7 /* KYTemplateTableSectionModel.m in Sources */,
 				EAA1933C22571EB700E001B3 /* KYBaseCollectionCell.m in Sources */,
 				EAA1933922571E9600E001B3 /* KYBaseTableCell.m in Sources */,
 				EAA1935D225746A900E001B3 /* TableViewCell.m in Sources */,
@@ -588,8 +791,12 @@
 				EA4AD6BA225EEB7B002688E4 /* CollectionView2Cell.m in Sources */,
 				EA2E907C22D479A5007A81C7 /* KYLoginAccountCell.m in Sources */,
 				EA4AD6AA225EE39C002688E4 /* GameViewController.m in Sources */,
+				EA2E90CE22D7160E007A81C7 /* KYTemplateCollectionViewModel.m in Sources */,
+				EA2E909822D703C9007A81C7 /* KYOneTextFieldCell.m in Sources */,
 				30709143225239DB009D3520 /* KYNavigationController.m in Sources */,
+				EA2E90C822D7160E007A81C7 /* KYTemplateTableItemModel.m in Sources */,
 				307091272250C496009D3520 /* AppDelegate.m in Sources */,
+				EA2E90D122D7160E007A81C7 /* KYTemplateColletctionViewController.m in Sources */,
 				3070914622523A4D009D3520 /* KYTabBarController.m in Sources */,
 				EA2E906D22D4735B007A81C7 /* KYLoginCollectionCellSectionModel.m in Sources */,
 				307091242250C496009D3520 /* main.m in Sources */,
@@ -602,7 +809,10 @@
 				EA7D347A22587BB7006917CE /* TableCellItemModel1.m in Sources */,
 				EAA1934222571EF700E001B3 /* KYCollectionViewController.m in Sources */,
 				307091402250C622009D3520 /* KYBaseViewController.m in Sources */,
+				EA2E90C922D7160E007A81C7 /* KYTemplateTableViewController.m in Sources */,
+				EA2E90C622D7160E007A81C7 /* KYTemplateTableViewModel.m in Sources */,
 				EA2E908922D485F6007A81C7 /* KYLoginSubmitCell.m in Sources */,
+				EA2E90CC22D7160E007A81C7 /* KYTemplateTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,7 +941,7 @@
 				INFOPLIST_FILE = KYMVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mvvm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kymvvm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -748,7 +958,7 @@
 				INFOPLIST_FILE = KYMVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mvvm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kymvvm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
