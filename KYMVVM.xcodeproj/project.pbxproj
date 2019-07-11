@@ -20,21 +20,9 @@
 		3070914C22523B12009D3520 /* KYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070914B22523B12009D3520 /* KYBaseModel.m */; };
 		3070914F22523B29009D3520 /* KYBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070914E22523B29009D3520 /* KYBaseViewModel.m */; };
 		D48989349316A4C0D4B7B656 /* Pods_KYMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B799B61D5AF425A1ADE229 /* Pods_KYMVVM.framework */; };
-		EA2E906D22D4735B007A81C7 /* KYLoginCollectionCellSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E905F22D4735B007A81C7 /* KYLoginCollectionCellSectionModel.m */; };
-		EA2E907122D4735B007A81C7 /* KYLoginColletctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E906822D4735B007A81C7 /* KYLoginColletctionViewController.m */; };
-		EA2E907222D4735B007A81C7 /* KYLoginCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E906B22D4735B007A81C7 /* KYLoginCollectionViewModel.m */; };
-		EA2E907522D47686007A81C7 /* KYLeftTitleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E907422D47686007A81C7 /* KYLeftTitleTextField.m */; };
-		EA2E907822D477E0007A81C7 /* KYPhoneVerifyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E907722D477E0007A81C7 /* KYPhoneVerifyTextField.m */; };
-		EA2E907C22D479A5007A81C7 /* KYLoginAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E907A22D479A5007A81C7 /* KYLoginAccountCell.m */; };
-		EA2E908022D47A9D007A81C7 /* KYLoginItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E907F22D47A9D007A81C7 /* KYLoginItemModel.m */; };
-		EA2E908422D4817D007A81C7 /* KYLoginVerifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E908222D4817D007A81C7 /* KYLoginVerifyCell.m */; };
-		EA2E908922D485F6007A81C7 /* KYLoginSubmitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E908722D485F6007A81C7 /* KYLoginSubmitCell.m */; };
-		EA2E908A22D485F6007A81C7 /* KYLoginSubmitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E908822D485F6007A81C7 /* KYLoginSubmitCell.xib */; };
 		EA2E908D22D595C0007A81C7 /* KYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E908C22D595C0007A81C7 /* KYTableView.m */; };
 		EA2E909022D595FA007A81C7 /* KYCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E908F22D595FA007A81C7 /* KYCollectionView.m */; };
 		EA2E909322D5B3BA007A81C7 /* UIView+KYMVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E909222D5B3BA007A81C7 /* UIView+KYMVVM.m */; };
-		EA2E909822D703C9007A81C7 /* KYOneTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E909722D703C9007A81C7 /* KYOneTextFieldCell.m */; };
-		EA2E909A22D70811007A81C7 /* KYLoginVerifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E909922D70811007A81C7 /* KYLoginVerifyCell.xib */; };
 		EA2E90C522D7160E007A81C7 /* create.py in Resources */ = {isa = PBXBuildFile; fileRef = EA2E90A122D7160D007A81C7 /* create.py */; };
 		EA2E90C622D7160E007A81C7 /* KYTemplateTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90A522D7160D007A81C7 /* KYTemplateTableViewModel.m */; };
 		EA2E90C722D7160E007A81C7 /* KYTemplateTableSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90A722D7160D007A81C7 /* KYTemplateTableSectionModel.m */; };
@@ -46,8 +34,20 @@
 		EA2E90CF22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90BA22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m */; };
 		EA2E90D022D7160E007A81C7 /* KYTemplateCollectionItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90BB22D7160E007A81C7 /* KYTemplateCollectionItemModel.m */; };
 		EA2E90D122D7160E007A81C7 /* KYTemplateColletctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90C022D7160E007A81C7 /* KYTemplateColletctionViewController.m */; };
-		EA2E90D222D7160E007A81C7 /* KYTemplateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90C222D7160E007A81C7 /* KYTemplateCollectionViewCell.m */; };
-		EA2E90D322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E90C322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib */; };
+		EA2E90D222D7160E007A81C7 /* KYTemplateCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90C222D7160E007A81C7 /* KYTemplateCollectionCell.m */; };
+		EA2E90D322D7160E007A81C7 /* KYTemplateCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E90C322D7160E007A81C7 /* KYTemplateCollectionCell.xib */; };
+		EA2E910522D72856007A81C7 /* KYLoginCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90ED22D72856007A81C7 /* KYLoginCollectionViewModel.m */; };
+		EA2E910622D72856007A81C7 /* KYLoginCollectionCellSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90F022D72856007A81C7 /* KYLoginCollectionCellSectionModel.m */; };
+		EA2E910722D72856007A81C7 /* KYLoginItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90F122D72856007A81C7 /* KYLoginItemModel.m */; };
+		EA2E910822D72856007A81C7 /* KYLoginColletctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90F522D72856007A81C7 /* KYLoginColletctionViewController.m */; };
+		EA2E910922D72856007A81C7 /* KYLoginSubmitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90F822D72856007A81C7 /* KYLoginSubmitCell.m */; };
+		EA2E910A22D72856007A81C7 /* KYLoginSubmitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E90FC22D72856007A81C7 /* KYLoginSubmitCell.xib */; };
+		EA2E910B22D72856007A81C7 /* KYLoginAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E90FD22D72856007A81C7 /* KYLoginAccountCell.xib */; };
+		EA2E910C22D72856007A81C7 /* KYLoginAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90FF22D72856007A81C7 /* KYLoginAccountCell.m */; };
+		EA2E910D22D72856007A81C7 /* KYLeftTitleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E910022D72856007A81C7 /* KYLeftTitleTextField.m */; };
+		EA2E910E22D72856007A81C7 /* KYPhoneVerifyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E910222D72856007A81C7 /* KYPhoneVerifyTextField.m */; };
+		EA2E910F22D72856007A81C7 /* KYLoginVerifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E910322D72856007A81C7 /* KYLoginVerifyCell.xib */; };
+		EA2E911022D72856007A81C7 /* KYLoginVerifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E910422D72856007A81C7 /* KYLoginVerifyCell.m */; };
 		EA4AD6AA225EE39C002688E4 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6A8225EE39C002688E4 /* GameViewController.m */; };
 		EA4AD6AE225EE452002688E4 /* GameViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6AD225EE452002688E4 /* GameViewModel.m */; };
 		EA4AD6B2225EE48F002688E4 /* GameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AD6B0225EE48F002688E4 /* GameCell.m */; };
@@ -108,34 +108,12 @@
 		4E06B6C54B59B9FA0F51D11F /* Pods-KYMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMVVM.debug.xcconfig"; path = "Target Support Files/Pods-KYMVVM/Pods-KYMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		91B799B61D5AF425A1ADE229 /* Pods_KYMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		979FDF9121395D5EE9EB3AC3 /* Pods-KYMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMVVM.release.xcconfig"; path = "Target Support Files/Pods-KYMVVM/Pods-KYMVVM.release.xcconfig"; sourceTree = "<group>"; };
-		EA2E905F22D4735B007A81C7 /* KYLoginCollectionCellSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginCollectionCellSectionModel.m; sourceTree = "<group>"; };
-		EA2E906222D4735B007A81C7 /* KYLoginCollectionCellSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginCollectionCellSectionModel.h; sourceTree = "<group>"; };
-		EA2E906822D4735B007A81C7 /* KYLoginColletctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginColletctionViewController.m; sourceTree = "<group>"; };
-		EA2E906922D4735B007A81C7 /* KYLoginColletctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginColletctionViewController.h; sourceTree = "<group>"; };
-		EA2E906B22D4735B007A81C7 /* KYLoginCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginCollectionViewModel.m; sourceTree = "<group>"; };
-		EA2E906C22D4735B007A81C7 /* KYLoginCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginCollectionViewModel.h; sourceTree = "<group>"; };
-		EA2E907322D47686007A81C7 /* KYLeftTitleTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYLeftTitleTextField.h; sourceTree = "<group>"; };
-		EA2E907422D47686007A81C7 /* KYLeftTitleTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLeftTitleTextField.m; sourceTree = "<group>"; };
-		EA2E907622D477E0007A81C7 /* KYPhoneVerifyTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYPhoneVerifyTextField.h; sourceTree = "<group>"; };
-		EA2E907722D477E0007A81C7 /* KYPhoneVerifyTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYPhoneVerifyTextField.m; sourceTree = "<group>"; };
-		EA2E907922D479A5007A81C7 /* KYLoginAccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYLoginAccountCell.h; sourceTree = "<group>"; };
-		EA2E907A22D479A5007A81C7 /* KYLoginAccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLoginAccountCell.m; sourceTree = "<group>"; };
-		EA2E907E22D47A9D007A81C7 /* KYLoginItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYLoginItemModel.h; sourceTree = "<group>"; };
-		EA2E907F22D47A9D007A81C7 /* KYLoginItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLoginItemModel.m; sourceTree = "<group>"; };
-		EA2E908122D4817D007A81C7 /* KYLoginVerifyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYLoginVerifyCell.h; sourceTree = "<group>"; };
-		EA2E908222D4817D007A81C7 /* KYLoginVerifyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLoginVerifyCell.m; sourceTree = "<group>"; };
-		EA2E908622D485F6007A81C7 /* KYLoginSubmitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYLoginSubmitCell.h; sourceTree = "<group>"; };
-		EA2E908722D485F6007A81C7 /* KYLoginSubmitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYLoginSubmitCell.m; sourceTree = "<group>"; };
-		EA2E908822D485F6007A81C7 /* KYLoginSubmitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KYLoginSubmitCell.xib; sourceTree = "<group>"; };
 		EA2E908B22D595C0007A81C7 /* KYTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTableView.h; sourceTree = "<group>"; };
 		EA2E908C22D595C0007A81C7 /* KYTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYTableView.m; sourceTree = "<group>"; };
 		EA2E908E22D595FA007A81C7 /* KYCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYCollectionView.h; sourceTree = "<group>"; };
 		EA2E908F22D595FA007A81C7 /* KYCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYCollectionView.m; sourceTree = "<group>"; };
 		EA2E909122D5B3BA007A81C7 /* UIView+KYMVVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+KYMVVM.h"; sourceTree = "<group>"; };
 		EA2E909222D5B3BA007A81C7 /* UIView+KYMVVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+KYMVVM.m"; sourceTree = "<group>"; };
-		EA2E909622D703C9007A81C7 /* KYOneTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYOneTextFieldCell.h; sourceTree = "<group>"; };
-		EA2E909722D703C9007A81C7 /* KYOneTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYOneTextFieldCell.m; sourceTree = "<group>"; };
-		EA2E909922D70811007A81C7 /* KYLoginVerifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYLoginVerifyCell.xib; sourceTree = "<group>"; };
 		EA2E90A122D7160D007A81C7 /* create.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = create.py; sourceTree = "<group>"; };
 		EA2E90A422D7160D007A81C7 /* KYTemplateTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateTableViewModel.h; sourceTree = "<group>"; };
 		EA2E90A522D7160D007A81C7 /* KYTemplateTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateTableViewModel.m; sourceTree = "<group>"; };
@@ -156,9 +134,30 @@
 		EA2E90BD22D7160E007A81C7 /* KYTemplateCollectionItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionItemModel.h; sourceTree = "<group>"; };
 		EA2E90BF22D7160E007A81C7 /* KYTemplateColletctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateColletctionViewController.h; sourceTree = "<group>"; };
 		EA2E90C022D7160E007A81C7 /* KYTemplateColletctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateColletctionViewController.m; sourceTree = "<group>"; };
-		EA2E90C222D7160E007A81C7 /* KYTemplateCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateCollectionViewCell.m; sourceTree = "<group>"; };
-		EA2E90C322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYTemplateCollectionViewCell.xib; sourceTree = "<group>"; };
-		EA2E90C422D7160E007A81C7 /* KYTemplateCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionViewCell.h; sourceTree = "<group>"; };
+		EA2E90C222D7160E007A81C7 /* KYTemplateCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateCollectionCell.m; sourceTree = "<group>"; };
+		EA2E90C322D7160E007A81C7 /* KYTemplateCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYTemplateCollectionCell.xib; sourceTree = "<group>"; };
+		EA2E90C422D7160E007A81C7 /* KYTemplateCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionCell.h; sourceTree = "<group>"; };
+		EA2E90ED22D72856007A81C7 /* KYLoginCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginCollectionViewModel.m; sourceTree = "<group>"; };
+		EA2E90EE22D72856007A81C7 /* KYLoginCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginCollectionViewModel.h; sourceTree = "<group>"; };
+		EA2E90F022D72856007A81C7 /* KYLoginCollectionCellSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginCollectionCellSectionModel.m; sourceTree = "<group>"; };
+		EA2E90F122D72856007A81C7 /* KYLoginItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginItemModel.m; sourceTree = "<group>"; };
+		EA2E90F222D72856007A81C7 /* KYLoginItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginItemModel.h; sourceTree = "<group>"; };
+		EA2E90F322D72856007A81C7 /* KYLoginCollectionCellSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginCollectionCellSectionModel.h; sourceTree = "<group>"; };
+		EA2E90F522D72856007A81C7 /* KYLoginColletctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginColletctionViewController.m; sourceTree = "<group>"; };
+		EA2E90F622D72856007A81C7 /* KYLoginColletctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginColletctionViewController.h; sourceTree = "<group>"; };
+		EA2E90F822D72856007A81C7 /* KYLoginSubmitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginSubmitCell.m; sourceTree = "<group>"; };
+		EA2E90F922D72856007A81C7 /* KYLeftTitleTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLeftTitleTextField.h; sourceTree = "<group>"; };
+		EA2E90FA22D72856007A81C7 /* KYLoginAccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginAccountCell.h; sourceTree = "<group>"; };
+		EA2E90FB22D72856007A81C7 /* KYPhoneVerifyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYPhoneVerifyTextField.h; sourceTree = "<group>"; };
+		EA2E90FC22D72856007A81C7 /* KYLoginSubmitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYLoginSubmitCell.xib; sourceTree = "<group>"; };
+		EA2E90FD22D72856007A81C7 /* KYLoginAccountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYLoginAccountCell.xib; sourceTree = "<group>"; };
+		EA2E90FE22D72856007A81C7 /* KYLoginVerifyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginVerifyCell.h; sourceTree = "<group>"; };
+		EA2E90FF22D72856007A81C7 /* KYLoginAccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginAccountCell.m; sourceTree = "<group>"; };
+		EA2E910022D72856007A81C7 /* KYLeftTitleTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLeftTitleTextField.m; sourceTree = "<group>"; };
+		EA2E910122D72856007A81C7 /* KYLoginSubmitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYLoginSubmitCell.h; sourceTree = "<group>"; };
+		EA2E910222D72856007A81C7 /* KYPhoneVerifyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYPhoneVerifyTextField.m; sourceTree = "<group>"; };
+		EA2E910322D72856007A81C7 /* KYLoginVerifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYLoginVerifyCell.xib; sourceTree = "<group>"; };
+		EA2E910422D72856007A81C7 /* KYLoginVerifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYLoginVerifyCell.m; sourceTree = "<group>"; };
 		EA4AD6A7225EE39C002688E4 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		EA4AD6A8225EE39C002688E4 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		EA4AD6AC225EE452002688E4 /* GameViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewModel.h; sourceTree = "<group>"; };
@@ -298,67 +297,6 @@
 				979FDF9121395D5EE9EB3AC3 /* Pods-KYMVVM.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		EA2E905D22D472E2007A81C7 /* login */ = {
-			isa = PBXGroup;
-			children = (
-				EA2E906722D4735B007A81C7 /* Controller */,
-				EA2E905E22D4735B007A81C7 /* Models */,
-				EA2E906A22D4735B007A81C7 /* ViewModels */,
-				EA2E906322D4735B007A81C7 /* Views */,
-			);
-			path = login;
-			sourceTree = "<group>";
-		};
-		EA2E905E22D4735B007A81C7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				EA2E906222D4735B007A81C7 /* KYLoginCollectionCellSectionModel.h */,
-				EA2E905F22D4735B007A81C7 /* KYLoginCollectionCellSectionModel.m */,
-				EA2E907E22D47A9D007A81C7 /* KYLoginItemModel.h */,
-				EA2E907F22D47A9D007A81C7 /* KYLoginItemModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		EA2E906322D4735B007A81C7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				EA2E907322D47686007A81C7 /* KYLeftTitleTextField.h */,
-				EA2E907422D47686007A81C7 /* KYLeftTitleTextField.m */,
-				EA2E907622D477E0007A81C7 /* KYPhoneVerifyTextField.h */,
-				EA2E907722D477E0007A81C7 /* KYPhoneVerifyTextField.m */,
-				EA2E907922D479A5007A81C7 /* KYLoginAccountCell.h */,
-				EA2E907A22D479A5007A81C7 /* KYLoginAccountCell.m */,
-				EA2E908122D4817D007A81C7 /* KYLoginVerifyCell.h */,
-				EA2E908222D4817D007A81C7 /* KYLoginVerifyCell.m */,
-				EA2E909922D70811007A81C7 /* KYLoginVerifyCell.xib */,
-				EA2E908622D485F6007A81C7 /* KYLoginSubmitCell.h */,
-				EA2E908722D485F6007A81C7 /* KYLoginSubmitCell.m */,
-				EA2E908822D485F6007A81C7 /* KYLoginSubmitCell.xib */,
-				EA2E909622D703C9007A81C7 /* KYOneTextFieldCell.h */,
-				EA2E909722D703C9007A81C7 /* KYOneTextFieldCell.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		EA2E906722D4735B007A81C7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				EA2E906922D4735B007A81C7 /* KYLoginColletctionViewController.h */,
-				EA2E906822D4735B007A81C7 /* KYLoginColletctionViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		EA2E906A22D4735B007A81C7 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				EA2E906C22D4735B007A81C7 /* KYLoginCollectionViewModel.h */,
-				EA2E906B22D4735B007A81C7 /* KYLoginCollectionViewModel.m */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		EA2E909B22D7158B007A81C7 /* Model */ = {
@@ -536,9 +474,9 @@
 		EA2E90C122D7160E007A81C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EA2E90C422D7160E007A81C7 /* KYTemplateCollectionViewCell.h */,
-				EA2E90C222D7160E007A81C7 /* KYTemplateCollectionViewCell.m */,
-				EA2E90C322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib */,
+				EA2E90C422D7160E007A81C7 /* KYTemplateCollectionCell.h */,
+				EA2E90C222D7160E007A81C7 /* KYTemplateCollectionCell.m */,
+				EA2E90C322D7160E007A81C7 /* KYTemplateCollectionCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -549,6 +487,66 @@
 				EAD801D222601BD0004E36C0 /* KYTableViewCellProtocol.h */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EA2E90EB22D72856007A81C7 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90EC22D72856007A81C7 /* ViewModels */,
+				EA2E90EF22D72856007A81C7 /* Models */,
+				EA2E90F422D72856007A81C7 /* Controller */,
+				EA2E90F722D72856007A81C7 /* Views */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		EA2E90EC22D72856007A81C7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90EE22D72856007A81C7 /* KYLoginCollectionViewModel.h */,
+				EA2E90ED22D72856007A81C7 /* KYLoginCollectionViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EA2E90EF22D72856007A81C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90F322D72856007A81C7 /* KYLoginCollectionCellSectionModel.h */,
+				EA2E90F022D72856007A81C7 /* KYLoginCollectionCellSectionModel.m */,
+				EA2E90F222D72856007A81C7 /* KYLoginItemModel.h */,
+				EA2E90F122D72856007A81C7 /* KYLoginItemModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA2E90F422D72856007A81C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90F622D72856007A81C7 /* KYLoginColletctionViewController.h */,
+				EA2E90F522D72856007A81C7 /* KYLoginColletctionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA2E90F722D72856007A81C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E90F922D72856007A81C7 /* KYLeftTitleTextField.h */,
+				EA2E910022D72856007A81C7 /* KYLeftTitleTextField.m */,
+				EA2E90FA22D72856007A81C7 /* KYLoginAccountCell.h */,
+				EA2E90FF22D72856007A81C7 /* KYLoginAccountCell.m */,
+				EA2E90FD22D72856007A81C7 /* KYLoginAccountCell.xib */,
+				EA2E910122D72856007A81C7 /* KYLoginSubmitCell.h */,
+				EA2E90F822D72856007A81C7 /* KYLoginSubmitCell.m */,
+				EA2E90FC22D72856007A81C7 /* KYLoginSubmitCell.xib */,
+				EA2E90FE22D72856007A81C7 /* KYLoginVerifyCell.h */,
+				EA2E910422D72856007A81C7 /* KYLoginVerifyCell.m */,
+				EA2E910322D72856007A81C7 /* KYLoginVerifyCell.xib */,
+				EA2E90FB22D72856007A81C7 /* KYPhoneVerifyTextField.h */,
+				EA2E910222D72856007A81C7 /* KYPhoneVerifyTextField.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EA4AD6A6225EE352002688E4 /* subViewController */ = {
@@ -595,7 +593,7 @@
 		EAA1934C2257450000E001B3 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				EA2E905D22D472E2007A81C7 /* login */,
+				EA2E90EB22D72856007A81C7 /* login */,
 				EA4AD6A6225EE352002688E4 /* subViewController */,
 				EA89E5BF225D943B00560323 /* collectionView */,
 				EAA1934D2257450900E001B3 /* tableView */,
@@ -658,7 +656,8 @@
 				TargetAttributes = {
 					3070911E2250C496009D3520 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = FJ8N4S5A53;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -687,14 +686,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				307091322250C496009D3520 /* LaunchScreen.storyboard in Resources */,
+				EA2E910F22D72856007A81C7 /* KYLoginVerifyCell.xib in Resources */,
+				EA2E910B22D72856007A81C7 /* KYLoginAccountCell.xib in Resources */,
 				EA7D3455225858E3006917CE /* TableView1Cell.xib in Resources */,
 				EA89E5C5225D993000560323 /* CollectionViewController.xib in Resources */,
-				EA2E908A22D485F6007A81C7 /* KYLoginSubmitCell.xib in Resources */,
-				EA2E909A22D70811007A81C7 /* KYLoginVerifyCell.xib in Resources */,
 				EAA1935E225746A900E001B3 /* TableViewCell.xib in Resources */,
 				EA4AD6BB225EEB7B002688E4 /* CollectionView2Cell.xib in Resources */,
 				EA7D347C22589ED2006917CE /* TableViewController.xib in Resources */,
-				EA2E90D322D7160E007A81C7 /* KYTemplateCollectionViewCell.xib in Resources */,
+				EA2E90D322D7160E007A81C7 /* KYTemplateCollectionCell.xib in Resources */,
 				EA8DC023225DD2C4009E0046 /* CollectionView1Cell.xib in Resources */,
 				3070912F2250C496009D3520 /* Assets.xcassets in Resources */,
 				EA89E5D3225D99F400560323 /* CollectionViewCell.xib in Resources */,
@@ -702,6 +701,7 @@
 				EA2E90C522D7160E007A81C7 /* create.py in Resources */,
 				EA4AD6B3225EE48F002688E4 /* GameCell.xib in Resources */,
 				EA2E90CD22D7160E007A81C7 /* KYTemplateTableCell.xib in Resources */,
+				EA2E910A22D72856007A81C7 /* KYLoginSubmitCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,24 +757,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA2E907222D4735B007A81C7 /* KYLoginCollectionViewModel.m in Sources */,
 				EA4AD6AE225EE452002688E4 /* GameViewModel.m in Sources */,
+				EA2E910C22D72856007A81C7 /* KYLoginAccountCell.m in Sources */,
 				EA89E5C8225D997D00560323 /* CollectionViewModel.m in Sources */,
 				3070914C22523B12009D3520 /* KYBaseModel.m in Sources */,
 				3070914F22523B29009D3520 /* KYBaseViewModel.m in Sources */,
 				EA2E90CF22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m in Sources */,
+				EA2E910622D72856007A81C7 /* KYLoginCollectionCellSectionModel.m in Sources */,
 				EA4AD6B6225EE4B5002688E4 /* GameItemModel.m in Sources */,
 				EAA193502257453600E001B3 /* TableViewController.m in Sources */,
 				EA89E5C4225D993000560323 /* CollectionViewController.m in Sources */,
 				EA8DC022225DD2C4009E0046 /* CollectionView1Cell.m in Sources */,
 				EA2E90D022D7160E007A81C7 /* KYTemplateCollectionItemModel.m in Sources */,
 				EA8DC026225DD509009E0046 /* CollectionCellItemModel1.m in Sources */,
-				EA2E90D222D7160E007A81C7 /* KYTemplateCollectionViewCell.m in Sources */,
+				EA2E90D222D7160E007A81C7 /* KYTemplateCollectionCell.m in Sources */,
 				EAA193562257457600E001B3 /* TableViewModel.m in Sources */,
 				3070912A2250C496009D3520 /* ViewController.m in Sources */,
 				EA7D3454225858E3006917CE /* TableView1Cell.m in Sources */,
-				EA2E908022D47A9D007A81C7 /* KYLoginItemModel.m in Sources */,
 				EA2E90C722D7160E007A81C7 /* KYTemplateTableSectionModel.m in Sources */,
+				EA2E910522D72856007A81C7 /* KYLoginCollectionViewModel.m in Sources */,
 				EAA1933C22571EB700E001B3 /* KYBaseCollectionCell.m in Sources */,
 				EAA1933922571E9600E001B3 /* KYBaseTableCell.m in Sources */,
 				EAA1935D225746A900E001B3 /* TableViewCell.m in Sources */,
@@ -783,35 +784,33 @@
 				EA89E5CE225D99D500560323 /* CollectionCellItemModel.m in Sources */,
 				EAA193532257455D00E001B3 /* TableCellItemModel.m in Sources */,
 				EAA1933F22571EDF00E001B3 /* KYTableViewController.m in Sources */,
-				EA2E907522D47686007A81C7 /* KYLeftTitleTextField.m in Sources */,
 				3070914922523AA3009D3520 /* KYBaseView.m in Sources */,
-				EA2E907822D477E0007A81C7 /* KYPhoneVerifyTextField.m in Sources */,
-				EA2E907122D4735B007A81C7 /* KYLoginColletctionViewController.m in Sources */,
 				EAA1934B2257436E00E001B3 /* KYBaseCellSectionModel.m in Sources */,
 				EA4AD6BA225EEB7B002688E4 /* CollectionView2Cell.m in Sources */,
-				EA2E907C22D479A5007A81C7 /* KYLoginAccountCell.m in Sources */,
+				EA2E911022D72856007A81C7 /* KYLoginVerifyCell.m in Sources */,
 				EA4AD6AA225EE39C002688E4 /* GameViewController.m in Sources */,
 				EA2E90CE22D7160E007A81C7 /* KYTemplateCollectionViewModel.m in Sources */,
-				EA2E909822D703C9007A81C7 /* KYOneTextFieldCell.m in Sources */,
 				30709143225239DB009D3520 /* KYNavigationController.m in Sources */,
+				EA2E910E22D72856007A81C7 /* KYPhoneVerifyTextField.m in Sources */,
 				EA2E90C822D7160E007A81C7 /* KYTemplateTableItemModel.m in Sources */,
 				307091272250C496009D3520 /* AppDelegate.m in Sources */,
 				EA2E90D122D7160E007A81C7 /* KYTemplateColletctionViewController.m in Sources */,
 				3070914622523A4D009D3520 /* KYTabBarController.m in Sources */,
-				EA2E906D22D4735B007A81C7 /* KYLoginCollectionCellSectionModel.m in Sources */,
 				307091242250C496009D3520 /* main.m in Sources */,
-				EA2E908422D4817D007A81C7 /* KYLoginVerifyCell.m in Sources */,
 				EA2E909022D595FA007A81C7 /* KYCollectionView.m in Sources */,
 				EAA193492257436E00E001B3 /* KYBaseCellItemModel.m in Sources */,
 				EA2E909322D5B3BA007A81C7 /* UIView+KYMVVM.m in Sources */,
 				EA4AD6B2225EE48F002688E4 /* GameCell.m in Sources */,
+				EA2E910D22D72856007A81C7 /* KYLeftTitleTextField.m in Sources */,
+				EA2E910922D72856007A81C7 /* KYLoginSubmitCell.m in Sources */,
 				EA2E908D22D595C0007A81C7 /* KYTableView.m in Sources */,
+				EA2E910722D72856007A81C7 /* KYLoginItemModel.m in Sources */,
 				EA7D347A22587BB7006917CE /* TableCellItemModel1.m in Sources */,
 				EAA1934222571EF700E001B3 /* KYCollectionViewController.m in Sources */,
+				EA2E910822D72856007A81C7 /* KYLoginColletctionViewController.m in Sources */,
 				307091402250C622009D3520 /* KYBaseViewController.m in Sources */,
 				EA2E90C922D7160E007A81C7 /* KYTemplateTableViewController.m in Sources */,
 				EA2E90C622D7160E007A81C7 /* KYTemplateTableViewModel.m in Sources */,
-				EA2E908922D485F6007A81C7 /* KYLoginSubmitCell.m in Sources */,
 				EA2E90CC22D7160E007A81C7 /* KYTemplateTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -936,14 +935,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FJ8N4S5A53;
 				INFOPLIST_FILE = KYMVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kymvvm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iv66.mvvm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = commonDev;
 			};
 			name = Debug;
 		};
@@ -953,12 +952,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KYMVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kymvvm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iv66.mvvm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};

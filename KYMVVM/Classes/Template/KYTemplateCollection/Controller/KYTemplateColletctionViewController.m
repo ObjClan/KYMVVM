@@ -8,7 +8,7 @@
 
 #import "KYTemplateColletctionViewController.h"
 #import "KYTemplateCollectionViewModel.h"
-#import "KYTemplateCollectionViewCell.h"
+#import "KYTemplateCollectionCell.h"
 #import "KYTemplateCollectionItemModel.h"
 @implementation KYTemplateColletctionViewController
 @synthesize viewModel = _viewModel;
@@ -35,7 +35,7 @@
 }
 - (void)updateUIWithCell:(UITableViewCell *)cell model:(KYBaseCellItemModel *)model indexPath:(NSIndexPath *)indexPath
 {
-    KYTemplateCollectionViewCell *rCell = (KYTemplateCollectionViewCell *)cell;
+    KYTemplateCollectionCell *rCell = (KYTemplateCollectionCell *)cell;
     KYTemplateCollectionItemModel *rModel =(KYTemplateCollectionItemModel *)model;
 }
 @end

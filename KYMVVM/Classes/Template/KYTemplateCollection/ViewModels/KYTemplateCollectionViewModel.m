@@ -15,7 +15,7 @@ static NSString *const firstSectionId = @"firstSectionId";
 {
     self.pageCount = 20;
     self.currentPage = 0;
-    [self registerCellClass:@[@"KYTemplateCollectionViewCell"]];
+    [self registerCellClass:@[@"KYTemplateCollectionCell"]];
 }
 - (void)fetchDataWithIsRefresh:(BOOL)isRefresh
 {
@@ -33,7 +33,7 @@ static NSString *const firstSectionId = @"firstSectionId";
             for (int i = 0; i < self.pageCount; i++) {
                 KYTemplateCollectionItemModel *item = [[KYTemplateCollectionItemModel alloc] init];
                 item.itemId = @"";
-                item.className = @"KYTemplateCollectionViewCell";
+                item.className = @"KYTemplateCollectionCell";
                 item.width = 100;
                 item.height = 100;
                 [items addObject:item];
@@ -52,7 +52,7 @@ static NSString *const firstSectionId = @"firstSectionId";
                 KYTemplateCollectionItemModel *item = [[KYTemplateCollectionItemModel alloc] init];
                 item.width = 100;
                 item.height = 100;
-                item.className = @"KYTemplateCollectionViewCell";
+                item.className = @"KYTemplateCollectionCell";
                 [addItems addObject:item];
             }
             [items addObjectsFromArray:addItems.copy];
