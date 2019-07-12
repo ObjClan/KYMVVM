@@ -1,5 +1,5 @@
 //
-//  KYTemplateColletctionViewController.h
+//  KYTemplateCollectionViewController.h
 //  KYMVVMDemo
 //
 //  Created by Key on 05/07/2019.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KYTemplateColletctionViewController : KYCollectionViewController
+@interface KYTemplateCollectionViewController : KYCollectionViewController
 
 @end
 

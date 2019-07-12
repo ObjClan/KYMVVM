@@ -1,16 +1,16 @@
 //
-//  KYTemplateColletctionViewController.m
+//  KYTemplateCollectionViewController.m
 //  KYMVVMDemo
 //
 //  Created by Key on 05/07/2019.
 //  Copyright © 2019 Key. All rights reserved.
 //
 
-#import "KYTemplateColletctionViewController.h"
+#import "KYTemplateCollectionViewController.h"
 #import "KYTemplateCollectionViewModel.h"
 #import "KYTemplateCollectionCell.h"
 #import "KYTemplateCollectionItemModel.h"
-@implementation KYTemplateColletctionViewController
+@implementation KYTemplateCollectionViewController
 @synthesize viewModel = _viewModel;
 - (BOOL)shouldPullDownRefresh
 {

@@ -33,7 +33,7 @@
 		EA2E90CE22D7160E007A81C7 /* KYTemplateCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90B822D7160E007A81C7 /* KYTemplateCollectionViewModel.m */; };
 		EA2E90CF22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90BA22D7160E007A81C7 /* KYTemplateCollectionSectionModel.m */; };
 		EA2E90D022D7160E007A81C7 /* KYTemplateCollectionItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90BB22D7160E007A81C7 /* KYTemplateCollectionItemModel.m */; };
-		EA2E90D122D7160E007A81C7 /* KYTemplateColletctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90C022D7160E007A81C7 /* KYTemplateColletctionViewController.m */; };
+		EA2E90D122D7160E007A81C7 /* KYTemplateCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90C022D7160E007A81C7 /* KYTemplateCollectionViewController.m */; };
 		EA2E90D222D7160E007A81C7 /* KYTemplateCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90C222D7160E007A81C7 /* KYTemplateCollectionCell.m */; };
 		EA2E90D322D7160E007A81C7 /* KYTemplateCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2E90C322D7160E007A81C7 /* KYTemplateCollectionCell.xib */; };
 		EA2E910522D72856007A81C7 /* KYLoginCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E90ED22D72856007A81C7 /* KYLoginCollectionViewModel.m */; };
@@ -132,8 +132,8 @@
 		EA2E90BB22D7160E007A81C7 /* KYTemplateCollectionItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateCollectionItemModel.m; sourceTree = "<group>"; };
 		EA2E90BC22D7160E007A81C7 /* KYTemplateCollectionSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionSectionModel.h; sourceTree = "<group>"; };
 		EA2E90BD22D7160E007A81C7 /* KYTemplateCollectionItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionItemModel.h; sourceTree = "<group>"; };
-		EA2E90BF22D7160E007A81C7 /* KYTemplateColletctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateColletctionViewController.h; sourceTree = "<group>"; };
-		EA2E90C022D7160E007A81C7 /* KYTemplateColletctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateColletctionViewController.m; sourceTree = "<group>"; };
+		EA2E90BF22D7160E007A81C7 /* KYTemplateCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionViewController.h; sourceTree = "<group>"; };
+		EA2E90C022D7160E007A81C7 /* KYTemplateCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateCollectionViewController.m; sourceTree = "<group>"; };
 		EA2E90C222D7160E007A81C7 /* KYTemplateCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTemplateCollectionCell.m; sourceTree = "<group>"; };
 		EA2E90C322D7160E007A81C7 /* KYTemplateCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYTemplateCollectionCell.xib; sourceTree = "<group>"; };
 		EA2E90C422D7160E007A81C7 /* KYTemplateCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTemplateCollectionCell.h; sourceTree = "<group>"; };
@@ -465,8 +465,8 @@
 		EA2E90BE22D7160E007A81C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EA2E90BF22D7160E007A81C7 /* KYTemplateColletctionViewController.h */,
-				EA2E90C022D7160E007A81C7 /* KYTemplateColletctionViewController.m */,
+				EA2E90BF22D7160E007A81C7 /* KYTemplateCollectionViewController.h */,
+				EA2E90C022D7160E007A81C7 /* KYTemplateCollectionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -793,7 +793,7 @@
 				EA2E910E22D72856007A81C7 /* KYPhoneVerifyTextField.m in Sources */,
 				EA2E90C822D7160E007A81C7 /* KYTemplateTableItemModel.m in Sources */,
 				307091272250C496009D3520 /* AppDelegate.m in Sources */,
-				EA2E90D122D7160E007A81C7 /* KYTemplateColletctionViewController.m in Sources */,
+				EA2E90D122D7160E007A81C7 /* KYTemplateCollectionViewController.m in Sources */,
 				3070914622523A4D009D3520 /* KYTabBarController.m in Sources */,
 				307091242250C496009D3520 /* main.m in Sources */,
 				EA2E909022D595FA007A81C7 /* KYCollectionView.m in Sources */,

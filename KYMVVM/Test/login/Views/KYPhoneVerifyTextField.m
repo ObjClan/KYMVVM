@@ -96,8 +96,5 @@ static NSInteger count = 60;
         });
     });
 }
-- (void)dealloc
-{
-    NSLog(@"11111111");
-}
+
 @end
