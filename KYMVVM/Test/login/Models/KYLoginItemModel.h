@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KYLoginItemModel : KYBaseCellItemModel
 @property (nonatomic, copy) NSString *leftTitle;
 @property (nonatomic, copy) NSString *placeholder;
+@property (nonatomic, copy) NSString *errorInfo;
 @end
 
 NS_ASSUME_NONNULL_END

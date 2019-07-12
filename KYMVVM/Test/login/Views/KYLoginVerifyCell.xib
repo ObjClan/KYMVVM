@@ -13,32 +13,45 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KYLoginVerifyCell">
-            <rect key="frame" x="0.0" y="0.0" width="236" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="417" height="104"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="236" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="417" height="104"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cla-HT-wyb" customClass="KYPhoneVerifyTextField">
-                        <rect key="frame" x="0.0" y="0.0" width="236" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="417" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="lez-1Z-A0f"/>
+                        </constraints>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iV-av-tuf">
+                        <rect key="frame" x="0.0" y="50" width="417" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="cla-HT-wyb" secondAttribute="bottom" id="YmN-pC-Ywx"/>
+                <constraint firstItem="9iV-av-tuf" firstAttribute="top" secondItem="cla-HT-wyb" secondAttribute="bottom" id="Nsa-U9-LKC"/>
+                <constraint firstItem="9iV-av-tuf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="O0i-jH-HXn"/>
+                <constraint firstAttribute="trailing" secondItem="9iV-av-tuf" secondAttribute="trailing" id="S6S-3p-eZo"/>
+                <constraint firstAttribute="bottom" secondItem="9iV-av-tuf" secondAttribute="bottom" id="aIU-Yx-1L5"/>
                 <constraint firstItem="cla-HT-wyb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d9E-gs-hf0"/>
                 <constraint firstAttribute="trailing" secondItem="cla-HT-wyb" secondAttribute="trailing" id="upt-Nu-Az0"/>
                 <constraint firstItem="cla-HT-wyb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zB3-oX-Bu6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
-            <size key="customSize" width="236" height="50"/>
+            <size key="customSize" width="417" height="104"/>
             <connections>
+                <outlet property="noticeLB" destination="9iV-av-tuf" id="1rg-yX-pVS"/>
                 <outlet property="textField" destination="cla-HT-wyb" id="FC4-YK-439"/>
             </connections>
-            <point key="canvasLocation" x="266.66666666666669" y="122.54464285714285"/>
+            <point key="canvasLocation" x="207.97101449275365" y="102.45535714285714"/>
         </collectionViewCell>
     </objects>
 </document>

@@ -14,5 +14,10 @@
     [super awakeFromNib];
     // Initialization code
 }
-
+- (void)prepareForReuse
+{
+    [super prepareForReuse];
+    self.textField.keyboardType = UIKeyboardTypeDefault;
+    self.textField.secureTextEntry = NO;
+}
 @end

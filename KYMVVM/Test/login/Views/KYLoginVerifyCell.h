@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KYLoginVerifyCell : KYBaseCollectionCell
 @property (weak, nonatomic) IBOutlet KYPhoneVerifyTextField *textField;
+@property (weak, nonatomic) IBOutlet UILabel *noticeLB;
 
 @end
 

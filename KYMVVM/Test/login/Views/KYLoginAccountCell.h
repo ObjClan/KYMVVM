@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KYLoginAccountCell : KYBaseCollectionCell
 @property (weak, nonatomic) IBOutlet KYLeftTitleTextField *textField;
+@property (weak, nonatomic) IBOutlet UILabel *noticeLable;
 
 @end
 

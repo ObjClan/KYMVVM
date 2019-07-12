@@ -7,7 +7,7 @@
 //
 
 #import "KYTableViewModel.h"
-
+#import "KYLoginItemModel.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -26,10 +26,15 @@ extern NSString * const loginSubmitItemId;
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *phoneNum;
 @property (nonatomic, copy) NSString *verify;
-
+@property (nonatomic, assign) BOOL allowSubmit;
 
 - (void)sendCodeWithCompletion:(void (^)(BOOL, NSString * _Nonnull))completion;
 - (void)loginWithCompletion:(void (^)(BOOL, NSString * _Nonnull))completion;
+- (void)textFieldEndEditWithIsCorrect:(BOOL)isCorrect model:(KYLoginItemModel *)model indexPath:(NSIndexPath *)indexPath;
+- (BOOL)isCorrectAccount;
+- (BOOL)isCorrectPassword;
+- (BOOL)isCorrectPhoneNum;
+- (BOOL)isCorrectVerfiy;
 @end
 
 NS_ASSUME_NONNULL_END
